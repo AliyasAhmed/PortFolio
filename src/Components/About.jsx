@@ -29,36 +29,17 @@ const About = () => {
   return (
     <>
       <Starbg starCount={200} />
-      <div className=" min-h-screen flex flex-col items-center md:text-xl">
-        <div className=" flex justify-center items-center backdrop-blur-sm rounded-xl  shadow  ">
+      <div id="about" className=" min-h-screen flex flex-col items-center md:text-xl">
+        <div className=" flex justify-center items-center backdrop-blur-sm rounded-xl shadow-lg  border-border p-4 bg-bg ">
           <h1>
             <p className="z-[1] typewriter text-5xl">Hey!</p>
           </h1>
         </div>
-        <div className=" glowlight h-[30vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
+        <div className=" glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
 
-        <div className="z-[1] fromdown border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-auto overflow-hidden p-6 w-[80vw] shadow-shadow shadow-lg">
-          <p className="md:text-xl">
-            I'm Aliyas, and I am a sound and software engineer! I have I worked
-            on numerous software and sound engineering projects. In terms of
-            sound engineering, I have created music for numerous labels and
-            designed numerous sounds. For example, my music on Trap Party even
-            received one million views on YouTube. In the beginning, I started
-            to produce music when I was in high school. Then for five years I
-            got my hands on sound design and a little bit graphic design, and my
-            passion was working with computers. I used to game a lot, so I
-            started programming in Python, then made my AI desktop assistant.
-            Then I started the HTML CSS JS journey, then I came to know about
-            React, started that, and then started Tailwind CSS, and then I
-            started NextJS, and between then I enjoyed producing music for
-            labels and making software. I also made some music videos or edited
-            a few in my career. I have been doing a little bit of cybersecurity
-            to enhance my skills. Then, as you can see below, I completed a
-            number of software projects on my own.
-          </p>
+          
           {/* technologies showcase */}
-        </div>
-        <div className="line h-[20vh]  bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+
         <div className="z-[1] scrollAnim flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">technologies i use</p>
         </div>
@@ -97,7 +78,7 @@ const About = () => {
         </div>
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
         {/* Music Player */}
-        <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[auto] w-[80vw] overflow-hidden p-6 shadow-shadow shadow-lg">
+        <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[auto] w-[85vw] overflow-hidden p-6 shadow-shadow shadow-lg">
           <p className="m-3 md:text-xl ">Music Player</p>
           <img
             width={""}
@@ -107,7 +88,7 @@ const About = () => {
 "
             alt=""
           />
-          <p className=" md:text-3xl">
+          <p className=" md:text-2xl">
             This music player is basically a Spotify clone, which was
             entertaining, but I had to add some javascript to make it function.
             However, I wanted to add some music so that it would function as a
@@ -136,14 +117,14 @@ const About = () => {
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
         {/* Todo app */}
-        <div className="z-[1] scrollAnim  border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[80vw] shadow-shadow shadow-lg object-cover">
+        <div className="z-[1] scrollAnim  border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[85vw] shadow-shadow shadow-lg object-cover">
           <p className="m-3 md:text-xl">Todo App</p>
           <img
             className="rounded-lg  "
             src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Todoapp.png"
             alt="Todo.img"
           />
-          <p className="py-10 md:text-3xl">
+          <p className="py-10 md:text-2xl">
             When I was studying React and Tailwind, I created this to-do app
             because I wanted to create a project that wasn't in HTML, CSS, or
             JS, and React was ideal for that. I created this using Tailwind and
@@ -167,7 +148,7 @@ const About = () => {
         </div>
         {/* Netflix Clone */}
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[80vw] shadow-shadow shadow-lg">
+        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[85vw] shadow-shadow shadow-lg">
           <p className="m-3 md:text-xl">Netflix Clone</p>
           <img
             controls
@@ -175,7 +156,7 @@ const About = () => {
             src="https://github.com/AliyasAhmed/media-files/blob/main/Netflix.png?raw=true"
             alt=""
           />
-          <p className="py-10 md:text-3xl">
+          <p className="py-10 md:text-2xl">
             Although it shouldn't be on the list, I didn't include JS when I
             first started learning HTML and CSS because I wasn't sure what the
             That language's syntax was. My first HTML/CSS project, which took
@@ -201,7 +182,7 @@ const About = () => {
         </div>
         {/* X Clone */}
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[80vw] shadow-shadow shadow-lg">
+        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[85vw] shadow-shadow shadow-lg">
           <p className="m-3 md:text-xl">X clone</p>
           <img
             controls
@@ -209,7 +190,7 @@ const About = () => {
             src="https://raw.githubusercontent.com/AliyasAhmed/media-files/refs/heads/main/X.png"
             alt=""
           />
-          <p className="py-10 md:text-3xl">
+          <p className="py-10 md:text-2xl">
             One of the smaller projects I worked on was this one as well. I only
             used HTML and Tailwind, and I mostly concentrated on responsive
             design, which is much simpler in Tailwind. I completed this project
