@@ -6,7 +6,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen h-[100vh] text-7xl" id="contact">
+    <div className="overflow-x-hidden flex justify-center items-center min-h-screen h-[100vh] text-7xl" id="contact">
       <p>It's Contact!</p>
     </div>
   );

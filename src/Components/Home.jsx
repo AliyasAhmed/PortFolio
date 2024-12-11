@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
     <Starbg starCount={50} />
-      <div id="home" className="min-h-screen h-[auto] flex flex-col items-center md:text-2xl">
+      <div id="home" className="overflow-x-hidden min-h-screen h-[auto] flex flex-col items-center md:text-2xl">
         
         <div className="flex justify-center items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl w-[auto] h-auto overflow-hidden bg-bg">
           

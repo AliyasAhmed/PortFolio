@@ -18,7 +18,7 @@ const Navbar = () => {
       {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 h-[20rem] w-[12rem] bg-[#00000050] backdrop-blur-md transition-all duration-300 z-10 rounded-lg ${
-          isOpen ? "translate-x-0 " : "-translate-x-full"
+          isOpen ? "translate-x-0 " : "-translate-x-full hidden"
         }`}
       >
         <button

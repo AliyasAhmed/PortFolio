@@ -29,7 +29,7 @@ const App = () => {
         </div>
 
         {/* Background video */}
-        <video autoPlay loop muted className="background-video">
+        {/* <video autoPlay loop muted className="background-video">
           <source
             src="https://raw.githubusercontent.com/AliyasAhmed/media-files/f758c973df7fe6fa5db810faebb899342069b470/ForPc.mp4
 "
@@ -37,7 +37,7 @@ const App = () => {
             type="video/mp4"
           />
         </video>
-        <div className="bg"></div>
+        <div className="bg-[#000000b6]"></div> */}
       </div>
     </>
   );
