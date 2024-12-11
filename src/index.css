@@ -39,7 +39,7 @@ body {
   }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 701px) {
   .background-video {
     display: block; /* Ensure video shows for larger screens */
   }
