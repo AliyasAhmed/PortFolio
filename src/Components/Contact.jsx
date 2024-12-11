@@ -6,9 +6,11 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className=" flex justify-center items-center min-h-screen h-[100vh] text-7xl" id="contact">
+    <>
+    <div className=" flex justify-center items-center min-h-screen h-[100vh] text-2xl w-[auto]" id="contact">
       <p>It's Contact!</p>
     </div>
+    </>
   );
 };
 

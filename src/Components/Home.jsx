@@ -8,7 +8,7 @@ const Home = () => {
   }, []);
   return (
     <>
-    <Starbg/>
+    {/* <Starbg/> */}
       <div id="home" className=" min-h-screen h-[auto] w-[auto] flex flex-col items-center md:text-2xl">
         
         <div className="flex justify-center items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl w-[auto] h-auto bg-bg">

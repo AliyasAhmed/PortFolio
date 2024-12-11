@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <>
-      <Starbg starCount={200} />
+      {/* <Starbg  /> */}
       <div id="about" className=" min-h-screen flex flex-col items-center md:text-xl">
         <div className=" flex justify-center items-center backdrop-blur-sm rounded-xl shadow-lg  border-border p-4 bg-bg ">
           <h1>
