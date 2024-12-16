@@ -1,6 +1,6 @@
 import React from "react";
 
-const Starbg = ({starCount = 200}) => {
+const Starbg = ({starCount = 300}) => {
   return (
     <div>
       <div className="absolute min-h-screen w-full">
@@ -9,7 +9,7 @@ const Starbg = ({starCount = 200}) => {
             key={i}
             className="relative animate-starMove  rounded-full bg-[#f8f8f8] shadow-[0px_2px_10px_2px_aqua] overflow-hidden"
             style={{
-              top: `${Math.random() * 650}vh`, // Randomize top position
+              top: `${Math.random() * 700}vh`, // Randomize top position
               left: `${Math.random() * 90}vw`, // Randomize left position
               height: `${Math.floor(Math.random() * 2 + 1)}px`, // Randomize size
               width: `${Math.floor(Math.random() * 2 + 1)}px`, // Match size with height

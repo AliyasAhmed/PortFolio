@@ -37,7 +37,7 @@ const Home = () => {
             labels and making software. I also made some music videos or edited
             a few in my career. I have been doing a little bit of cybersecurity
             to enhance my skills. Then, as you can see below, I completed a
-            number of software projects on my own.
+            number of software projects on my own I have also done some music video projects where i made cinematic videos for my projects and for people i worked for.
           </p>
         </div>
         <div className="line md:h-[30vh] h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>

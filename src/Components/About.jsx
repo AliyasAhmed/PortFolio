@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import Starbg from "./Starbg";
+import Music from "./Music";
 
 const About = () => {
   useEffect(() => {
@@ -78,8 +79,8 @@ const About = () => {
         </div>
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
         {/* Music Player */}
-        <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[auto] w-[85vw] overflow-hidden p-6 shadow-shadow shadow-lg">
-          <p className="m-3 md:text-xl ">Music Player</p>
+        <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[auto] lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg">
+          <p className="m-3 lg:text-xl ">Music Player</p>
           <img
             width={""}
             height={""}
@@ -88,7 +89,7 @@ const About = () => {
 "
             alt=""
           />
-          <p className=" md:text-2xl">
+          <p className="p-3 md:text-2xl">
             This music player is basically a Spotify clone, which was
             entertaining, but I had to add some javascript to make it function.
             However, I wanted to add some music so that it would function as a
@@ -117,14 +118,14 @@ const About = () => {
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
         {/* Todo app */}
-        <div className="z-[1] scrollAnim  border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[85vw] shadow-shadow shadow-lg object-cover">
+        <div className="z-[1] scrollAnim  border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg object-cover">
           <p className="m-3 md:text-xl">Todo App</p>
           <img
             className="rounded-lg  "
             src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Todoapp.png"
             alt="Todo.img"
           />
-          <p className="py-10 md:text-2xl">
+          <p className="p-5 md:text-2xl">
             When I was studying React and Tailwind, I created this to-do app
             because I wanted to create a project that wasn't in HTML, CSS, or
             JS, and React was ideal for that. I created this using Tailwind and
@@ -148,7 +149,7 @@ const About = () => {
         </div>
         {/* Netflix Clone */}
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[85vw] shadow-shadow shadow-lg">
+        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg">
           <p className="m-3 md:text-xl">Netflix Clone</p>
           <img
             controls
@@ -156,7 +157,7 @@ const About = () => {
             src="https://github.com/AliyasAhmed/media-files/blob/main/Netflix.png?raw=true"
             alt=""
           />
-          <p className="py-10 md:text-2xl">
+          <p className="p-5 md:text-2xl">
             Although it shouldn't be on the list, I didn't include JS when I
             first started learning HTML and CSS because I wasn't sure what the
             That language's syntax was. My first HTML/CSS project, which took
@@ -182,7 +183,7 @@ const About = () => {
         </div>
         {/* X Clone */}
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden p-6 w-[85vw] shadow-shadow shadow-lg">
+        <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg">
           <p className="m-3 md:text-xl">X clone</p>
           <img
             controls
@@ -190,7 +191,7 @@ const About = () => {
             src="https://raw.githubusercontent.com/AliyasAhmed/media-files/refs/heads/main/X.png"
             alt=""
           />
-          <p className="py-10 md:text-2xl">
+          <p className="p-5 md:text-2xl">
             One of the smaller projects I worked on was this one as well. I only
             used HTML and Tailwind, and I mostly concentrated on responsive
             design, which is much simpler in Tailwind. I completed this project
@@ -201,16 +202,17 @@ const About = () => {
             </p>
           </p>
         </div>
-        {/* Netflix button */}
+        {/* X button */}
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
         <div className="z-[2] scrollAnim">
           <a href="https://aliyasahmed.github.io/projectX/" target="_blank">
-            <button className="text-white backdrop-blur-lg  rounded-lg p-4 w-[6rem] shadow-lg shadow-shadow hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white transition-all hover:bg-bg md:text-3xl  ">
+            <button className="text-white backdrop-blur-lg rounded-lg p-4 w-[6rem] shadow-lg shadow-shadow hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white transition-all hover:bg-bg md:text-3xl  ">
               X
             </button>
           </a>
         </div>
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+        <Music/>
       </div>
     </>
   );
