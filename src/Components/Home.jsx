@@ -3,9 +3,6 @@ import { useEffect } from "react";
 import Starbg from "./Starbg";
 
 const Home = () => {
-  useEffect(() => {
-    document.title = "Home";
-  }, []);
   return (
     <>
     {/* <Starbg/> */}

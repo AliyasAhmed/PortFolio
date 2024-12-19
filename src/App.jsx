@@ -7,7 +7,7 @@ import Contact from "./Components/Contact";
 const App = () => {
   return (
     <>
-      <div className="app-container bg-black relative z-0">
+      <div className="app-container bg-black relative z-0 text-green-950">
         {/* Navbar */}
         <Navbar />
 

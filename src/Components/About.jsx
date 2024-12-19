@@ -1,12 +1,9 @@
 import React from "react";
-import { useEffect } from "react";
 import Starbg from "./Starbg";
 import Music from "./Music";
 
 const About = () => {
-  useEffect(() => {
-    document.title = "About";
-  }, []);
+
   const scrollcallback = () => {
     const elements = document.querySelectorAll(".scrollAnim, .line"); // Select both scrollable and line elements
     elements.forEach((element) => {
@@ -105,7 +102,7 @@ const About = () => {
         </div>
         {/* music player button */}
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-        <div className="z-[2] scrollAnim">
+        <div className="z-[1] scrollAnim">
           <a
             href="https://spotifymuiscplayer.freewebhostmost.com/"
             target="_blank"
