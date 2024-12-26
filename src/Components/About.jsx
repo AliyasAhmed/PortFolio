@@ -3,7 +3,6 @@ import Starbg from "./Starbg";
 import Music from "./Music";
 
 const About = () => {
-
   const scrollcallback = () => {
     const elements = document.querySelectorAll(".scrollAnim, .line"); // Select both scrollable and line elements
     elements.forEach((element) => {
@@ -27,7 +26,10 @@ const About = () => {
   return (
     <>
       {/* <Starbg  /> */}
-      <div id="about" className=" min-h-screen flex flex-col items-center md:text-xl">
+      <div
+        id="about"
+        className=" min-h-screen flex flex-col items-center md:text-xl"
+      >
         <div className=" flex justify-center items-center backdrop-blur-sm rounded-xl shadow-lg  border-border p-4 bg-bg ">
           <h1>
             <p className="z-[1] typewriter text-5xl">Hey!</p>
@@ -35,8 +37,7 @@ const About = () => {
         </div>
         <div className=" glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
 
-          
-          {/* technologies showcase */}
+        {/* technologies showcase */}
 
         <div className="z-[1] scrollAnim flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">technologies i use</p>
@@ -46,7 +47,6 @@ const About = () => {
         {/* skillSet */}
         <div class="scrollAnim w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden">
           <div class="fromleft flex gap-[3rem] left-0">
-
             <img class="" width="35vw" src="html.svg" alt="HTML Icon" />
             <img class="" width="35vw" src="css.svg" alt="CSS Icon" />
             <img class="" width="35vw" src="js.svg" alt="JavaScript Icon" />
@@ -74,7 +74,7 @@ const About = () => {
         <div className="z-[1] scrollAnim flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">Software Projects</p>
         </div>
-        <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+        <div className=" glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
         {/* Music Player */}
         <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[auto] lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg">
           <p className="m-3 lg:text-xl ">Music Player</p>
@@ -209,7 +209,7 @@ const About = () => {
           </a>
         </div>
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-        <Music/>
+        <Music />
       </div>
     </>
   );
