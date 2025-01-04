@@ -11,18 +11,35 @@ const Contact = () => {
     const { name, value } = e.target; // Get the field's name (like 'name', 'email', or 'message') and its current value.
     setFormFill({ ...formFill, [name]: value }); // Update the corresponding field in the state.
   };
-  
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Stop the browser from reloading the page on form submission.
     e.target.submit(); // Send the form data to Formspree.
     setFormFill({ name: "", email: "", message: "" }); // Reset the form fields to empty strings.
   };
-  
 
   return (
     <>
-      <div className="flex flex-col justify-center p-5 shadow-shadow bg-[#00000028] border border-border rounded-md w-full">
+      <div className="relative flex flex-col justify-center p-5 shadow-shadow bg-[#00000028] border border-border rounded-md w-full backdrop-blur-md">
+        {/* stars */}
+        <div>
+          {[...Array(60)].map((_, i) => {
+            return (
+              <div
+                key={i}
+                className="absolute animate-starMove rounded-full bg-[#f8f8f8] shadow-[0px_2px_10px_2px_aqua] overflow-hidden"
+                style={{
+                  top: `${Math.floor(Math.random() * 70)}vh`, // Random top position
+                  left: `${Math.random() * 70}vw`, // Randomize left position
+                  height: `${Math.floor(Math.random() * 2 + 1)}px`, // Random size for height
+                  width: `${Math.floor(Math.random() * 2 + 1)}px`, // Random size for width
+                  animationDuration: `${Math.random() * 7 + 1}s`,
+                }}
+              ></div>
+            );
+          })}
+        </div>
+
         {/* Header Section */}
         <section className="text-center mb-10">
           <h1 className="text-4xl font-bold text-[#01C38D] mb-4">
@@ -42,7 +59,10 @@ const Contact = () => {
             onSubmit={handleSubmit}
           >
             <div>
-              <label htmlFor="name" className="block text-[#FFFFFF] font-medium">
+              <label
+                htmlFor="name"
+                className="block text-[#FFFFFF] font-medium"
+              >
                 Full Name
               </label>
               <input
@@ -57,7 +77,10 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-[#FFFFFF] font-medium">
+              <label
+                htmlFor="email"
+                className="block text-[#FFFFFF] font-medium"
+              >
                 Email Address
               </label>
               <input
@@ -72,7 +95,10 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-[#FFFFFF] font-medium">
+              <label
+                htmlFor="message"
+                className="block text-[#FFFFFF] font-medium"
+              >
                 Message
               </label>
               <textarea
