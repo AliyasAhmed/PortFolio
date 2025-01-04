@@ -1,13 +1,13 @@
 import React from "react";
-import { useEffect } from "react";
-import Starbg from "./Starbg";
-
 const Home = () => {
   return (
     <>
-    {/* <Starbg/> */}
-      <div id="home" className=" min-h-screen h-[auto] w-[auto] flex flex-col items-center md:text-2xl">
+        <div className="fixed top-5 right-5 lg:w-10 md:w-10 w-10 z-10">
+          
+          <a href="https://github.com/AliyasAhmed" target="_blank"><img src="github-mark.svg" alt="" /></a>
+        </div>
         
+      <div id="home" className=" min-h-screen h-[auto] w-[auto] flex flex-col items-center md:text-2xl">
         <div className="flex justify-center items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl w-[auto] h-auto bg-bg">
           
           <h1>
@@ -17,7 +17,7 @@ const Home = () => {
         <div className="line h-[30vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
 
-        <div className="fromdown flex justify-center items-center border border-[#3d3d3d8f] backdrop-blur-sm rounded-2xl p-6 w-[85vw] bg-bg text-text h-[auto] overflow-hidden">
+        <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[85vw] bg-bg text-text h-[auto] overflow-hidden">
         <p className="md:text-xl">
             I'm Aliyas, and I am a sound and software engineer! I have I worked
             on numerous software and sound engineering projects. In terms of

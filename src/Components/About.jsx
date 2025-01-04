@@ -1,5 +1,4 @@
 import React from "react";
-import Starbg from "./Starbg";
 import Music from "./Music";
 import Projects from "./Projects";
 
@@ -26,7 +25,6 @@ const About = () => {
 
   return (
     <>
-      {/* <Starbg  /> */}
       <div
         id="about"
         className=" min-h-screen flex flex-col items-center md:text-xl"

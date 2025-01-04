@@ -67,6 +67,7 @@ const Music = () => {
             </p>
           </div>
         </div>
+        <div className="line h-[25vh]  bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
       </div>
     </>
   );
