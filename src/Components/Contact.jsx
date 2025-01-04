@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="relative flex flex-col justify-center p-5 shadow-shadow bg-[#00000028] border border-border rounded-md w-full backdrop-blur-md">
+      <div className="relative flex flex-col justify-center p-5  backdrop-blur-lg shadow shadow-shadow bg-[#00000083] border border-border rounded-md w-full ">
         {/* stars */}
         <div>
           {[...Array(60)].map((_, i) => {
