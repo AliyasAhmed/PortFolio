@@ -9,7 +9,7 @@
   --bg:rgba(0, 0, 0, 0.199);
   --border:rgba(0, 70, 75, 0.253);
   --text:white;
-  --shadow: rgb(0, 84, 90) ;
+  --shadow: rgba(0, 84, 90, 0.336) ;
 }
 * {
   font-family: "Bebas Neue", "Silkscreen", serif;
