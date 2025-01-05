@@ -20,14 +20,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className="relative flex flex-col justify-center p-5  backdrop-blur-lg shadow shadow-shadow bg-[#00000083] border border-border rounded-md w-full ">
         {/* stars */}
         <div>
           {[...Array(60)].map((_, i) => {
             return (
               <div
                 key={i}
-                className="absolute animate-starMove rounded-full bg-[#f8f8f8] shadow-[0px_2px_10px_2px_aqua] overflow-hidden"
+                className="z[-5] absolute animate-starMove rounded-full bg-[#ffffff] shadow-[0px_2px_10px_2px_aqua] overflow-hidden"
                 style={{
                   top: `${Math.floor(Math.random() * 70)}vh`, // Random top position
                   left: `${Math.random() * 70}vw`, // Randomize left position
@@ -39,6 +38,7 @@ const Contact = () => {
             );
           })}
         </div>
+      <div className="z-10 relative flex flex-col justify-center p-5 backdrop-blur-sm bg-[#00000000] shadow shadow-shadow  border border-border rounded-md w-full ">
 
         {/* Header Section */}
         <section className="text-center mb-10">
