@@ -27,7 +27,7 @@ const Contact = () => {
             return (
               <div
                 key={i}
-                className="z[-5] relative animate-starMove rounded-full bg-[#81818183] shadow-[0px_2px_10px_2px_aqua] overflow-hidden"
+                className="z[-5] relative animate-starMove rounded-full bg-[#81818183] shadow-[0px_2px_10px_2px_aqua] overflow-x-hidden"
                 style={{
                   top: `${Math.floor(Math.random() * 70)}vh`, // Random top position
                   left: `${Math.random() * 70}vw`, // Randomize left position
