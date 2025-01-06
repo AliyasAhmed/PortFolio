@@ -2,6 +2,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
+    
         <div className="fixed top-5 right-5 lg:w-10 md:w-10 w-10 z-10">
           
           <a href="https://github.com/AliyasAhmed" target="_blank"><img src="github-mark.svg" alt="" /></a>
