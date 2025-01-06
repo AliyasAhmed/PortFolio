@@ -30,7 +30,7 @@ const Contact = () => {
                 className="z[-5] relative animate-starMove rounded-full bg-[#81818183] shadow-[0px_2px_10px_2px_aqua] overflow-x-hidden"
                 style={{
                   top: `${Math.floor(Math.random() * 70)}vh`, // Random top position
-                  left: `${Math.random() * 100}%`, // Randomize left position
+                  left: `${Math.random() * 90}%`, // Randomize left position
                   height: `${Math.floor(Math.random() * 2 + 1)}px`, // Random size for height
                   width: `${Math.floor(Math.random() * 2 + 1)}px`, // Random size for width
                   animationDuration: `${Math.random() * 7 + 1}s`,
