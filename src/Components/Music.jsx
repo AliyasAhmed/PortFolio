@@ -10,7 +10,7 @@ const Music = () => {
         <div className="line h-[20vh]  bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
         <div className="border border-border p-4 rounded-md backdrop-blur-sm shadow shadow-shadow">
-          <p className="">
+          <p className="text-justify">
             Let's now discuss my musical contributions and projects. When I was
             seventeen, I began producing music. I had no idea how to mix and
             master it, but I eventually grasped the idea, and five years later,
@@ -31,7 +31,7 @@ const Music = () => {
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-            <p className="p-2 md:text-2xl">
+            <p className="p-2 md:text-2xl text-justify">
               I wrote this song in 2021 and released it in 2023. I mixed and
               mastered it flawlessly, and I also sound-designed the drop part. I
               sent it to a number of labels, but most of the time I sent my
@@ -56,7 +56,7 @@ const Music = () => {
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-            <p className="p-2 md:text-2xl">
+            <p className="p-2 md:text-2xl text-justify">
               In addition, this music was a contract for the label I worked for.
               It was released in 2023, and I was in charge of the cinematography
               and editing. I wrote the song in 22 and gave it time to improve

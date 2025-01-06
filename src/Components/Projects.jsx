@@ -14,12 +14,12 @@ const Projects = () => {
         <img
           width={""}
           height={""}
-          className="py-3 rounded-lg w-[100vw] h-auto "
+          className="py-3 rounded-lg w-[100vw] h-auto hover:scale-[110%]  transition-all "
           src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Music_player.png
 "
           alt=""
         />
-        <p className="p-3 md:text-2xl">
+        <p className="p-3 md:text-2xl text-justify">
           This music player is basically a Spotify clone, which was
           entertaining, but I had to add some javascript to make it function.
           However, I wanted to add some music so that it would function as a
@@ -51,11 +51,11 @@ const Projects = () => {
       <div className="z-[1] scrollAnim  border border-border backdrop-blur-sm rounded-2xl bg-bg text-[#ffffff] h-[auto] overflow-hidden lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg object-cover">
         <p className="m-3 md:text-xl">Todo App</p>
         <img
-          className="rounded-lg  "
+          className="rounded-lg hover:scale-[110%]  transition-all  "
           src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Todoapp.png"
           alt="Todo.img"
         />
-        <p className="p-5 md:text-2xl">
+        <p className="p-5 md:text-2xl text-justify">
           When I was studying React and Tailwind, I created this to-do app
           because I wanted to create a project that wasn't in HTML, CSS, or JS,
           and React was ideal for that. I created this using Tailwind and React.
@@ -83,11 +83,11 @@ const Projects = () => {
         <p className="m-3 md:text-xl">Netflix Clone</p>
         <img
           controls
-          className=" rounded-lg w-[auto] h-auto"
+          className=" rounded-lg w-[auto] h-auto hover:scale-[110%]  transition-all"
           src="https://github.com/AliyasAhmed/media-files/blob/main/Netflix.png?raw=true"
           alt=""
         />
-        <p className="p-5 md:text-2xl">
+        <p className="p-5 md:text-2xl text-justify">
           Although it shouldn't be on the list, I didn't include JS when I first
           started learning HTML and CSS because I wasn't sure what the That
           language's syntax was. My first HTML/CSS project, which took two hours
@@ -114,11 +114,11 @@ const Projects = () => {
         <p className="m-3 md:text-xl">X clone</p>
         <img
           controls
-          className=" rounded-lg w-[auto] h-auto"
+          className=" rounded-lg w-[auto] h-auto hover:scale-[110%] transition-all"
           src="https://raw.githubusercontent.com/AliyasAhmed/media-files/refs/heads/main/X.png"
           alt=""
         />
-        <p className="p-5 md:text-2xl">
+        <p className="p-5 md:text-2xl text-justify">
           One of the smaller projects I worked on was this one as well. I only
           used HTML and Tailwind, and I mostly concentrated on responsive
           design, which is much simpler in Tailwind. I completed this project in

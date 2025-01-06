@@ -23,7 +23,7 @@ const Home = () => {
 
 
         <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[85vw] bg-bg text-text h-[auto] overflow-hidden">
-        <p className="md:text-xl">
+        <p className="md:text-xl text-justify">
             I'm Aliyas, and I am a sound and software engineer! I have I worked
             on numerous software and sound engineering projects. In terms of
             sound engineering, I have created music for numerous labels and
