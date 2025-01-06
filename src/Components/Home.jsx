@@ -2,28 +2,29 @@ import React from "react";
 const Home = () => {
   return (
     <>
-    
-        <div className="fixed top-5 right-5 lg:w-10 md:w-10 w-10 z-10">
-          
-          <a href="https://github.com/AliyasAhmed" target="_blank"><img src="github-mark.svg" alt="" /></a>
-        </div>
-        {/* <div className="fixed top-[6rem] right-4 lg:w-10 md:w-10 w-10 z-10">
+      <div className="fixed top-5 right-5 lg:w-10 md:w-10 w-10 z-10">
+        <a href="https://github.com/AliyasAhmed" target="_blank">
+          <img src="github-mark.svg" alt="" />
+        </a>
+      </div>
+      {/* <div className="fixed top-[6rem] right-4 lg:w-10 md:w-10 w-10 z-10">
           
           <a href="www.linkedin.com/aliyasahmed" target="_blank"><img src="linkden.svg" alt="" /></a>
         </div> */}
-        
-      <div id="home" className=" min-h-screen h-[auto] w-[auto] flex flex-col items-center md:text-2xl">
+
+      <div
+        id="home"
+        className=" min-h-screen h-[auto] w-[auto] flex flex-col items-center md:text-2xl"
+      >
         <div className="flex justify-center items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl w-[auto] h-auto bg-bg">
-          
           <h1>
             <p className="typewriter ">Welcome To my PortFolio</p>
           </h1>
         </div>
         <div className="line h-[30vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
-
-        <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[85vw] bg-bg text-text h-[auto] overflow-hidden">
-        <p className="md:text-xl text-justify">
+        <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[90vw] bg-bg text-text h-[auto] overflow-hidden">
+          <p className="md:text-xl text-justify">
             I'm Aliyas, and I am a sound and software engineer! I have I worked
             on numerous software and sound engineering projects. In terms of
             sound engineering, I have created music for numerous labels and
@@ -39,11 +40,12 @@ const Home = () => {
             labels and making software. I also made some music videos or edited
             a few in my career. I have been doing a little bit of cybersecurity
             to enhance my skills. Then, as you can see below, I completed a
-            number of software projects on my own I have also done some music video projects where i made cinematic videos for my projects and for people i worked for.
+            number of software projects on my own I have also done some music
+            video projects where i made cinematic videos for my projects and for
+            people i worked for.
           </p>
         </div>
         <div className="line md:h-[30vh] h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-
       </div>
     </>
   );
