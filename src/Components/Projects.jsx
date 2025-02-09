@@ -37,7 +37,7 @@ const Projects = () => {
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
       <div className="z-[1] scrollAnim">
         <a
-          href="https://spotifymuiscplayer.freewebhostmost.com/"
+          href="https://musicplayerclone.freewebhostmost.com/"
           target="_blank"
         >
           <button className="text-white backdrop-blur-md  rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl  ">

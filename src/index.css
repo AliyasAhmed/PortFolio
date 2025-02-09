@@ -78,11 +78,11 @@ body {
 
 .content {
   position: relative;
-  z-index: 4; /* Content appears above blurred background */
+  z-index: 4; 
   width: 100%;
   max-width: 800px;
   margin: auto;
-  padding-top: 80px; /* Adds space for the Navbar at the top */
+  padding-top: 80px; 
 }
 
 /* Navbar styling */
