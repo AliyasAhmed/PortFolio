@@ -15,9 +15,9 @@ const Projects = () => {
           width={""}
           height={""}
           className="py-3 rounded-lg w-[100vw] h-auto hover:scale-[110%]  transition-all "
-          src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Music_player.png
-"
+          src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Music_player.png"
           alt=""
+          loading="lazy"
         />
         <p className="p-3 md:text-2xl text-justify">
           This music player is basically a Spotify clone, which was
@@ -27,7 +27,7 @@ const Projects = () => {
           it to the server. This music player is completely functional and free.
           It can play music, change the volume, and add new songs, but that's
           all It can do. i used basic HTML, CSS and Javascript for this project
-          it is responsive for any device
+          it is responsive for any device"
           <p className="">
             Visit the link below to learn more about this initiative.
           </p>
@@ -36,10 +36,7 @@ const Projects = () => {
       {/* music player button */}
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
       <div className="z-[1] scrollAnim">
-        <a
-          href="https://musicplayerclone.freewebhostmost.com/"
-          target="_blank"
-        >
+        <a href="https://musicplayerclone.freewebhostmost.com/" target="_blank">
           <button className="text-white backdrop-blur-md  rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl  ">
             <p>Music Player</p>
           </button>
@@ -54,6 +51,7 @@ const Projects = () => {
           className="rounded-lg hover:scale-[110%]  transition-all  "
           src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Todoapp.png"
           alt="Todo.img"
+          loading="lazy"
         />
         <p className="p-5 md:text-2xl text-justify">
           When I was studying React and Tailwind, I created this to-do app
@@ -86,6 +84,7 @@ const Projects = () => {
           className=" rounded-lg w-[auto] h-auto hover:scale-[110%]  transition-all"
           src="https://github.com/AliyasAhmed/media-files/blob/main/Netflix.png?raw=true"
           alt=""
+          loading="lazy"
         />
         <p className="p-5 md:text-2xl text-justify">
           Although it shouldn't be on the list, I didn't include JS when I first
@@ -117,6 +116,7 @@ const Projects = () => {
           className=" rounded-lg w-[auto] h-auto hover:scale-[110%] transition-all"
           src="https://raw.githubusercontent.com/AliyasAhmed/media-files/refs/heads/main/X.png"
           alt=""
+          loading="lazy"
         />
         <p className="p-5 md:text-2xl text-justify">
           One of the smaller projects I worked on was this one as well. I only
