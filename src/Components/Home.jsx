@@ -1,31 +1,35 @@
 import React from "react";
+
 const Home = () => {
   return (
     <>
-      <div className="fixed top-5 right-5 lg:w-10 md:w-10 w-10 z-10">
-        <a href="https://github.com/AliyasAhmed" target="_blank">
-          <img src="github-mark.svg" alt="" />
+      {/* GitHub Link */}
+      <div className="fixed top-5 right-5 w-10 z-10">
+        <a
+          href="https://github.com/AliyasAhmed"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="github-mark.svg" alt="GitHub" />
         </a>
       </div>
-      {/* <div className="fixed top-[6rem] right-4 lg:w-10 md:w-10 w-10 z-10">
-          
-          <a href="www.linkedin.com/aliyasahmed" target="_blank"><img src="linkden.svg" alt="" /></a>
-        </div> */}
 
-      <div
-        id="home"
-        className=" min-h-screen h-[auto] w-[auto] flex flex-col items-center md:text-2xl"
-      >
+      {/* Home Section */}
+      <section id="home" className="min-h-screen flex flex-col items-center md:text-2xl">
+        {/* Welcome Message */}
         <div className="flex justify-center items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl w-[auto] h-auto bg-bg">
           <h1>
             <p className="typewriter ">Welcome To my PortFolio</p>
           </h1>
         </div>
+
+        {/* Decorative Line */}
         <div className="line h-[30vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
-        <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[90vw] bg-bg text-text h-[auto] overflow-hidden">
+        {/* About Section */}
+        <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[90vw] bg-bg text-text overflow-hidden">
           <p className="md:text-xl lg:text-2xl text-justify">
-            I'm Aliyas, and I am a sound and software engineer! I have I worked
+          I'm Aliyas, and I am a sound and software engineer! I have I worked
             on numerous software and sound engineering projects. In terms of
             sound engineering, I have created music for numerous labels and
             designed numerous sounds. For example, my music on Trap Party even
@@ -45,8 +49,10 @@ const Home = () => {
             people i worked for.
           </p>
         </div>
+
+        {/* Second Decorative Line */}
         <div className="line md:h-[30vh] h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      </div>
+      </section>
     </>
   );
 };

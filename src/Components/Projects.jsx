@@ -1,5 +1,8 @@
 import React from "react";
-
+import musicPlayer from "../assets/Music_player.png"
+import Netflix from "../assets/Netflix.png"
+import Todo from "../assets/Todoapp.png"
+import X from "../assets/X.png"
 const Projects = () => {
   return (
     <>
@@ -14,7 +17,7 @@ const Projects = () => {
         <p className="m-3 lg:text-xl">Music Player</p>
         <img
           className="py-3 rounded-lg w-full h-auto hover:scale-[90%] transition-all"
-          src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Music_player.png"
+          src={musicPlayer}
           alt="Music Player"
           loading="lazy"
         />
@@ -53,7 +56,7 @@ const Projects = () => {
         <p className="m-3 md:text-xl">Todo App</p>
         <img
           className="rounded-lg hover:scale-[90%] transition-all"
-          src="https://raw.githubusercontent.com/AliyasAhmed/media-files/2f4384eee187e3b129cc12fdae24b36220b3771b/Todoapp.png"
+          src={Todo}
           alt="Todo App"
           loading="lazy"
         />
@@ -91,7 +94,7 @@ const Projects = () => {
         <p className="m-3 md:text-xl">Netflix Clone</p>
         <img
           className="rounded-lg w-auto h-auto hover:scale-[90%] transition-all"
-          src="https://github.com/AliyasAhmed/media-files/blob/main/Netflix.png?raw=true"
+          src={Netflix}
           alt="Netflix Clone"
           loading="lazy"
         />
@@ -128,7 +131,7 @@ const Projects = () => {
         <p className="m-3 md:text-xl">X Clone</p>
         <img
           className="rounded-lg w-auto h-auto hover:scale-[90%] transition-all"
-          src="https://raw.githubusercontent.com/AliyasAhmed/media-files/main/X.png"
+          src={X}
           alt="X Clone"
           loading="lazy"
         />

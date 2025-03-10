@@ -26,10 +26,10 @@ const Music = () => {
               height="300"
               src="https://www.youtube.com/embed/bQH0t_R81Eo?si=Bxx8TkOSadLx_mUF"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
             <p className="p-2 md:text-2xl text-justify">
               I wrote this song in 2021 and released it in 2023. I mixed and
@@ -51,10 +51,10 @@ const Music = () => {
               height="300"
               src="https://www.youtube.com/embed/OM-wp8PIrqc?si=c_0zZ007hUpFg0PA"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
             <p className="p-2 md:text-2xl text-justify">
               In addition, this music was a contract for the label I worked for.
