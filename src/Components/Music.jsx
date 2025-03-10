@@ -20,7 +20,7 @@ const Music = () => {
         </div>
         <div className=" glowlight h-[25vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
         <div className=" flex flex-col justify-center content-center">
-          <div className="flex flex-col z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center  content-center shadow-shadow shadow-md">
+          <div className="flex flex-col z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md">
             <iframe
               width="auto"
               height="300"
@@ -67,7 +67,7 @@ const Music = () => {
             </p>
           </div>
         </div>
-        <div className="line h-[25vh]  bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+        <div className="line h-[25vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
       </div>
     </>
   );

@@ -69,7 +69,7 @@ const About = () => {
         </div>
 
         {/* Software Projects*/}
-        <Projects/>
+        <Projects />
         <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
         <Music />
       </div>

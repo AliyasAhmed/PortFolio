@@ -24,7 +24,7 @@ const Home = () => {
         <div className="line h-[30vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
 
         <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[90vw] bg-bg text-text h-[auto] overflow-hidden">
-          <p className="md:text-xl text-justify">
+          <p className="md:text-xl lg:text-2xl text-justify">
             I'm Aliyas, and I am a sound and software engineer! I have I worked
             on numerous software and sound engineering projects. In terms of
             sound engineering, I have created music for numerous labels and
