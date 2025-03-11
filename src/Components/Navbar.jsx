@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Starbg from './Starbg'
+import Starbg from "./Starbg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <div>
         {/* Hamburger Icon */}
-        <Starbg/>
+        <Starbg />
         <button
           className="fixed top-4 left-4 z-20 bg-bg backdrop-blur-sm border border-[#5353534b] p-2 rounded-md hover:bg-[#ffffff] hover:shadow-white shadow-lg transition-all hover:text-black "
           onClick={toggleMenu}

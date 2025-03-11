@@ -1,9 +1,10 @@
 import React from "react";
-import musicPlayer from "../assets/Music_player.png"
-import Netflix from "../assets/Netflix.png"
-import Todo from "../assets/Todoapp.png"
-import X from "../assets/X.png"
-const Projects = () => {
+import musicPlayer from "../assets/Music_player.png";
+import Netflix from "../assets/Netflix.png";
+import Todo from "../assets/Todoapp.png";
+import X from "../assets/X.png";
+
+export default function Projects() {
   return (
     <>
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
@@ -90,10 +91,10 @@ const Projects = () => {
 
       {/* Netflix Clone */}
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg">
+      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg ">
         <p className="m-3 md:text-xl">Netflix Clone</p>
         <img
-          className="rounded-lg w-auto h-auto hover:scale-[90%] transition-all"
+          className="w-auto h-auto hover:scale-[90%] transition-all"
           src={Netflix}
           alt="Netflix Clone"
           loading="lazy"
@@ -162,6 +163,6 @@ const Projects = () => {
       </div>
     </>
   );
-};
+}
 
-export default Projects;
+// export default Projects;

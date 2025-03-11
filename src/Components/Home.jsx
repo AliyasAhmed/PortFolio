@@ -2,7 +2,10 @@ import React from "react";
 
 const Home = () => {
   return (
-    <>
+    <section
+      id="home"
+      className="min-h-screen flex flex-col items-center md:text-2xl"
+    >
       {/* GitHub Link */}
       <div className="fixed top-5 right-5 w-10 z-10">
         <a
@@ -10,50 +13,37 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="github-mark.svg" alt="GitHub" />
+          <img src="github-mark.svg" alt="GitHub" className="w-full" />
         </a>
       </div>
 
-      {/* Home Section */}
-      <section id="home" className="min-h-screen flex flex-col items-center md:text-2xl">
-        {/* Welcome Message */}
-        <div className="flex justify-center items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl w-[auto] h-auto bg-bg">
-          <h1>
-            <p className="typewriter ">Welcome To my PortFolio</p>
-          </h1>
-        </div>
+      {/* Welcome Message */}
+      <div className="flex  items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl bg-bg ">
+        <h1 className=" typewriter">Welcome To my Portfolio</h1>
+      </div>
 
-        {/* Decorative Line */}
-        <div className="line h-[30vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+      {/* Decorative Line */}
+      <div className="h-[30vh] w-1 bg-white shadow-[0px_5px_22px_2px_aqua] fromdown"></div>
 
-        {/* About Section */}
-        <div className="fromdown flex justify-center items-center border border-border backdrop-blur-sm rounded-2xl p-6 w-[90vw] bg-bg text-text overflow-hidden">
-          <p className="md:text-xl lg:text-2xl text-justify">
-          I'm Aliyas, and I am a sound and software engineer! I have I worked
-            on numerous software and sound engineering projects. In terms of
-            sound engineering, I have created music for numerous labels and
-            designed numerous sounds. For example, my music on Trap Party even
-            received one million views on YouTube. In the beginning, I started
-            to produce music when I was in high school. Then for five years I
-            got my hands on sound design and a little bit graphic design, and my
-            passion was working with computers. I used to game a lot, so I
-            started programming in Python, then made my AI desktop assistant.
-            Then I started the HTML CSS JS journey, then I came to know about
-            React, started that, and then started Tailwind CSS, and then I
-            started NextJS, and between then I enjoyed producing music for
-            labels and making software. I also made some music videos or edited
-            a few in my career. I have been doing a little bit of cybersecurity
-            to enhance my skills. Then, as you can see below, I completed a
-            number of software projects on my own I have also done some music
-            video projects where i made cinematic videos for my projects and for
-            people i worked for.
-          </p>
-        </div>
+      {/* About Section */}
+      <div className="flex justify-center items-justify border border-border rounded-2xl p-6 w-[90vw] bg-bg text-text overflow-hidden text-justify md:text-xl lg:text-2xl">
+        I'm Aliyas, a sound and software engineer! I’ve worked on numerous
+        software and sound engineering projects. In sound engineering, I’ve
+        created music for various labels and designed sounds. My music on Trap
+        Party even reached one million views on YouTube! I started producing
+        music in high school, then explored sound design and a bit of graphic
+        design for five years. My passion for computers led me to programming,
+        where I built an AI desktop assistant with Python. I then progressed to
+        HTML, CSS, and JavaScript, followed by React, Tailwind CSS, and Next.js.
+        While developing software, I also produced music for labels and made
+        cinematic music videos. Additionally, I’ve dabbled in cybersecurity to
+        enhance my skill set. Below, you can check out my software projects and
+        creative work.
+      </div>
 
-        {/* Second Decorative Line */}
-        <div className="line md:h-[30vh] h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      </section>
-    </>
+      {/* Second Decorative Line */}
+      <div className="h-[33vh] w-1 bg-white shadow-[0px_5px_22px_2px_aqua] scrollAnim"></div>
+    </section>
   );
 };
 

@@ -1,10 +1,20 @@
-
-/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/Fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Silkscreen";
+  src: url("/Fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 :root{
   --bg:rgba(0, 0, 0, 0.199);
   --border:rgba(0, 70, 75, 0.253);
@@ -12,7 +22,8 @@
   --shadow: rgba(0, 84, 90, 0.336) ;
 }
 * {
-  font-family: "Bebas Neue", "Silkscreen", serif;
+  /* font-family: "Bebas Neue", "Silkscreen", serif; */
+
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -23,7 +34,7 @@ body {
   /* background-image: url("img.jpg"); */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
-  font-family: "oswald";
+  font-family: "Silkscreen" , sans-serif;
   font-size: normal;
   scroll-behavior: smooth;
   /* overflow-x: hidden; */

@@ -37,7 +37,7 @@ const About = () => {
             <p className="z-[1] typewriter text-5xl">Hey!</p>
           </h1>
         </div>
-        <div className=" glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
+        <div className="scrollAnim glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
 
         {/* technologies showcase */}
 
