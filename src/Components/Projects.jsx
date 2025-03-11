@@ -14,7 +14,7 @@ export default function Projects() {
       <div className="glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
 
       {/* Music Player */}
-      <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg">
+      <div className="z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl lg:text-2xl  text-justify">
         <p className="m-3 lg:text-xl">Music Player</p>
         <img
           className="py-3 rounded-lg w-full h-auto hover:scale-[90%] transition-all"
@@ -22,7 +22,7 @@ export default function Projects() {
           alt="Music Player"
           loading="lazy"
         />
-        <p className="p-3 md:text-2xl lg:text-2xl  text-justify">
+        <p className="p-3">
           This music player is basically a Spotify clone, which was
           entertaining, but I had to add some javascript to make it function.
           However, I wanted to add some music so that it would function as a
@@ -53,7 +53,7 @@ export default function Projects() {
 
       {/* Todo App */}
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg">
+      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl text-justify">
         <p className="m-3 md:text-xl">Todo App</p>
         <img
           className="rounded-lg hover:scale-[90%] transition-all"
@@ -61,7 +61,7 @@ export default function Projects() {
           alt="Todo App"
           loading="lazy"
         />
-        <p className="p-5 md:text-2xl text-justify">
+        <p className="p-5">
           When I was studying React and Tailwind, I created this to-do app
           because I wanted to create a project that wasn't in HTML, CSS, or JS,
           and React was ideal for that. I created this using Tailwind and React.
@@ -91,7 +91,7 @@ export default function Projects() {
 
       {/* Netflix Clone */}
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg ">
+      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl text-justify">
         <p className="m-3 md:text-xl">Netflix Clone</p>
         <img
           className="w-auto h-auto hover:scale-[90%] transition-all"
@@ -99,7 +99,7 @@ export default function Projects() {
           alt="Netflix Clone"
           loading="lazy"
         />
-        <p className="p-5 md:text-2xl text-justify">
+        <p className="p-5">
           Although it shouldn't be on the list, I didn't include JS when I first
           started learning HTML and CSS because I wasn't sure what the That
           language's syntax was. My first HTML/CSS project, which took two hours
@@ -128,7 +128,7 @@ export default function Projects() {
 
       {/* X Clone */}
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg">
+      <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg  md:text-2xl text-justify">
         <p className="m-3 md:text-xl">X Clone</p>
         <img
           className="rounded-lg w-auto h-auto hover:scale-[90%] transition-all"
@@ -136,7 +136,7 @@ export default function Projects() {
           alt="X Clone"
           loading="lazy"
         />
-        <p className="p-5 md:text-2xl text-justify">
+        <p className="p-5">
           One of the smaller projects I worked on was this one as well. I only
           used HTML and Tailwind, and I mostly concentrated on responsive
           design, which is much simpler in Tailwind. I completed this project in
