@@ -13,7 +13,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="github-mark.svg" alt="GitHub" className="w-full" />
+          <img src="github-mark.svg" loading="lazy" alt="GitHub" className="w-full" />
         </a>
       </div>
 
