@@ -17,8 +17,6 @@ const projects = [
     ],
     link: "https://musicplayerclone.freewebhostmost.com/",
     buttonText: "Music Player",
-    buttonClass: "",
-    zIndex: "z-[1]",
   },
   {
     id: 2,
@@ -31,8 +29,6 @@ const projects = [
     ],
     link: "https://aliyasahmed.github.io/WhatToDo/",
     buttonText: "Todo App",
-    buttonClass: "",
-    zIndex: "z-[1]",
   },
   {
     id: 3,
@@ -45,8 +41,6 @@ const projects = [
     ],
     link: "https://aliyasahmed.github.io/Netflix-clone/",
     buttonText: "Netflix",
-    buttonClass: "",
-    zIndex: "z-[2]",
   },
   {
     id: 4,
@@ -60,11 +54,10 @@ const projects = [
     link: "https://aliyasahmed.github.io/projectX/",
     buttonText: "X",
     buttonClass: "w-[6rem]",
-    zIndex: "z-[2]",
   },
 ];
 
-export default function Projects() {
+const Projects = () => {
   return (
     <>
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
@@ -92,10 +85,10 @@ export default function Projects() {
           </div>
 
           <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-          <div className={`${project.zIndex} scrollAnim`}>
+          <div className= 'z-[2] scrollAnim'>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <button
-                className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass}`}
+                className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass} `}
               >
                 {project.buttonText}
               </button>
@@ -105,4 +98,6 @@ export default function Projects() {
       ))}
     </>
   );
-}
+};
+
+export default Projects;
