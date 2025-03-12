@@ -1,84 +1,82 @@
-import { React, useEffect, useCallback, useRef } from "react";
+import {React, useEffect} from "react";
 import Music from "./Music";
 import Projects from "./Projects";
 
-// Static list of icons to avoid duplication
-const techIcons = [
-  "html.svg", "css.svg", "js.svg", "python.svg",
-  "node-js.svg", "tailwind.svg", "mongo.svg", 
-  "react.svg", "next.svg"
-];
-
 const About = () => {
-  const observerRef = useRef(null);
-
-  // Memoized scroll handler using Intersection Observer
-  const setupObservers = useCallback(() => {
-    const elements = document.querySelectorAll(".scrollAnim, .line");
-    
-    if (observerRef.current) {
-      observerRef.current.disconnect();
-    }
-
-    observerRef.current = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          if (entry.target.classList.contains("scrollAnim")) {
-            entry.target.classList.add("fromdown");
+  useEffect(() => {
+    const scrollcallback = () => {
+      const elements = document.querySelectorAll(".scrollAnim, .line");
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          if (element.classList.contains("scrollAnim")) {
+            element.classList.add("fromdown");
           }
-          if (entry.target.classList.contains("line")) {
-            entry.target.classList.add("glowlight");
+          if (element.classList.contains("line")) {
+            element.classList.add("glowlight");
           }
         }
       });
-    }, { threshold: 0.1 });
+    };
 
-    elements.forEach(element => observerRef.current.observe(element));
+    window.addEventListener("scroll", scrollcallback);
+    scrollcallback(); // Initial check in case elements are already in view
+
+    return () => {
+      window.removeEventListener("scroll", scrollcallback); // Cleanup
+    };
   }, []);
-
-  useEffect(() => {
-    setupObservers();
-    return () => observerRef.current?.disconnect();
-  }, [setupObservers]);
-
   return (
-    <div id="about" className="min-h-screen flex flex-col items-center md:text-xl">
-      {/* Header Section */}
-      <div className="flex items-center backdrop-blur-sm rounded-xl shadow-lg border-border p-4 bg-bg text-5xl">
-        <h1 className="typewriter">Hey!</h1>
-      </div>
-      
-      <div className="scrollAnim glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]" />
-
-      {/* Technologies Showcase */}
-      <div className="z-[1] scrollAnim flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-auto overflow-hidden text-black shadow-lg shadow-white">
-        <p className="animate-pulse">technologies i use</p>
-      </div>
-      
-      <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]" />
-
-      {/* Optimized Skillset */}
-      <div className="scrollAnim w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden">
-        <div className="fromleft flex gap-[3rem] left-0 animate-scroll">
-          {[...techIcons, ...techIcons].map((icon, index) => (
-            <img 
-              key={`${icon}-${index}`}
-              width="35" 
-              height="35"
-              src={icon} 
-              alt={icon.replace('.svg', '')} 
-              loading="lazy"
-              className="min-w-[35px]"
-            />
-          ))}
+    <>
+      <div
+        id="about"
+        className=" min-h-screen flex flex-col items-center md:text-xl"
+      >
+        <div className=" flex items-center backdrop-blur-sm rounded-xl shadow-lg  border-border p-4 bg-bg text-5xl">
+          <h1 className=" typewriter "> 
+            Hey!
+          </h1>
         </div>
-      </div>
+        <div className="scrollAnim glowlight h-[20vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
 
-      {/* Projects & Music Sections */}
-      <Projects />
-      <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]" />
-      <Music />
-    </div>
+        {/* technologies showcase */}
+
+        <div className="z-[1] scrollAnim flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
+          <p className="transition-all animate-pulse">technologies i use</p>
+        </div>
+        <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+
+        {/* skillSet */}
+        <div className="scrollAnim w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden">
+          <div className="fromleft flex gap-[3rem] left-0">
+            <img className="" width="35vw" src="html.svg" alt="HTML Icon" />
+            <img className="" width="35vw" src="css.svg" alt="CSS Icon" />
+            <img className="" width="35vw" src="js.svg" alt="JavaScript Icon" />
+            <img className="" width="35vw" src="python.svg" alt="Python Icon" />
+            <img className="" width="35vw" src="node-js.svg" alt="nodejs" />
+            <img className="" width="35vw" src="tailwind.svg" alt="Tailwind Icon" />
+            <img className="" width="20vw" src="mongo.svg" alt="MongoDB Icon" />
+            <img className="" width="35vw" src="react.svg" alt="React Icon" />
+            <img className="" width="35vw" src="next.svg" alt="Next.js Icon" />
+
+            <img className="" width="35vw" src="html.svg" alt="HTML Icon" />
+            <img className="" width="35vw" src="css.svg" alt="CSS Icon" />
+            <img className="" width="35vw" src="js.svg" alt="JavaScript Icon" />
+            <img className="" width="35vw" src="python.svg" alt="Python Icon" />
+            <img className="" width="35vw" src="tailwind.svg" alt="Tailwind Icon" />
+            <img className="" width="35vw" src="node-js.svg" alt="nodejs" />
+            <img className="" width="20vw" src="mongo.svg" alt="MongoDB Icon" />
+            <img className="" width="35vw" src="react.svg" alt="React Icon" />
+            <img className="" width="35vw" src="next.svg" alt="Next.js Icon" />
+          </div>
+        </div>
+
+        {/* Software Projects*/}
+        <Projects />
+        <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+        <Music />
+      </div>
+    </>
   );
 };
 
