@@ -1,6 +1,6 @@
 import { React, useRef } from "react";
-import LightSaver from "./lightsaver";
 import InViewAnimation from "./InViewAnimation";
+import LightSaver from "./Line";
 const Home = () => {
   return (
     <section

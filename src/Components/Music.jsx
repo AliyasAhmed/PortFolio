@@ -1,6 +1,6 @@
 import React from "react";
 import InViewAnimation from "./InViewAnimation";
-import LightSaver from "./lightsaver.jsx";
+import LightSaver from "./Line";
 
 const musicProjects = [
   {
