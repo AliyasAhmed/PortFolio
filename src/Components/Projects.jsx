@@ -3,6 +3,8 @@ import musicPlayer from "../assets/Music_player.png";
 import Netflix from "../assets/Netflix.png";
 import Todo from "../assets/Todoapp.png";
 import X from "../assets/X.png";
+import LightSaver from "./lIGHTsAVER.JSX";
+import InViewAnimation from "./InViewAnimation";
 
 const projects = [
   {
@@ -60,16 +62,16 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-      <div className="z-[1] scrollAnim flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-auto overflow-hidden text-black shadow-lg shadow-white">
+      <LightSaver />
+      <div className="z-[1]  flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-auto overflow-hidden text-black shadow-lg shadow-white">
         <p className="transition-all animate-pulse">Software Projects</p>
       </div>
 
       {projects.map((project) => (
         <React.Fragment key={project.id}>
-          <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+          <LightSaver />
 
-          <div className="z-[1] scrollAnim border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl text-justify">
+          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl text-justify">
             <p className="m-3 lg:text-xl">{project.title}</p>
             <img
               className={project.imageClass}
@@ -82,10 +84,10 @@ const Projects = () => {
                 {desc}
               </p>
             ))}
-          </div>
+          </InViewAnimation>
 
-          <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
-          <div className= 'z-[2] scrollAnim'>
+          <LightSaver />
+          <InViewAnimation className="z-[2] ">
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <button
                 className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass} `}
@@ -93,7 +95,7 @@ const Projects = () => {
                 {project.buttonText}
               </button>
             </a>
-          </div>
+          </InViewAnimation>
         </React.Fragment>
       ))}
     </>

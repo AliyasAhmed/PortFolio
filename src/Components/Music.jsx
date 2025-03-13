@@ -1,4 +1,6 @@
 import React from "react";
+import InViewAnimation from "./InViewAnimation";
+import LightSaver from "./lIGHTsAVER.JSX";
 
 const musicProjects = [
   {
@@ -31,24 +33,23 @@ const musicProjects = [
 const Music = () => {
   return (
     <div className="min-h-screen h-[auto] w-[auto] flex flex-col items-center content-center">
-      <p className="z-[1] scrollAnim flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-[auto] overflow-hidden text-black shadow-lg shadow-white">
+      <InViewAnimation className="z-[1] scrollAnim flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-[auto] overflow-hidden text-black shadow-lg shadow-white">
         Music Projects
-      </p>
-      <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+      </InViewAnimation>
+      <LightSaver/>
 
-      <div className="border border-border p-4 rounded-md backdrop-blur-sm shadow shadow-shadow text-justify">
+      <InViewAnimation className="border border-border p-4 rounded-md backdrop-blur-sm shadow shadow-shadow text-justify">
         Let's now discuss my musical contributions and projects. When I was
         seventeen, I began producing music. I had no idea how to mix and
         master it, but I eventually grasped the idea, and five years later, I
         signed my first label, which allowed me to reach the audience I had
         always desired.
-      </div>
-      <div className="glowlight h-[25vh] bg-[#f8f8f8] w-1 shadow-[0px_10px_20px_2px_aqua]"></div>
-
+      </InViewAnimation>
+      <LightSaver/>
       {musicProjects.map((project) => (
         <React.Fragment key={project.id}>
           <div className="flex flex-col justify-center content-center">
-            <div className="flex flex-col z-[1] scrollAnim backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md md:text-2xl text-justify">
+            <InViewAnimation className="flex flex-col z-[1] backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md md:text-2xl text-justify">
               <iframe
                 width="auto"
                 height="400"
@@ -60,9 +61,9 @@ const Music = () => {
                 allowFullScreen
               ></iframe>
               <p className="p-2">{project.description}</p>
-            </div>
+            </InViewAnimation>
           </div>
-          <div className="line h-[25vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua]"></div>
+          <LightSaver/>
         </React.Fragment>
       ))}
     </div>

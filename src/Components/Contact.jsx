@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import InViewAnimation from "./InViewAnimation";
 
 const Contact = () => {
   const [formFill, setFormFill] = useState({
@@ -51,7 +52,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Form Section */}
-        <div className="max-w-4xl mx-auto bg-[#00000025] shadow-lg rounded-lg p-6">
+        <InViewAnimation className="max-w-4xl mx-auto bg-[#00000025] shadow-lg rounded-lg p-6">
           <form
             className="grid grid-cols-1 gap-6"
             action="https://formspree.io/f/xwppwbvd"
@@ -119,7 +120,7 @@ const Contact = () => {
               Submit
             </button>
           </form>
-        </div>
+        </InViewAnimation>
       </div>
       {/* Vertical Line Section */}
       <div className="line h-[20vh] bg-white w-1 shadow-[0px_5px_22px_2px_aqua] mx-auto"></div>
