@@ -1,6 +1,6 @@
 import { React, useRef } from "react";
 import { motion, useInView } from "motion/react";
-const LightSaver = () => {
+const Lightsaver = () => {
   const ref = useRef();
   const isInView = useInView(ref, { once: false });
   return (
@@ -14,4 +14,4 @@ const LightSaver = () => {
   );
 };
 
-export default LightSaver;
+export default Lightsaver;

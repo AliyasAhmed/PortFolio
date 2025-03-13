@@ -1,5 +1,5 @@
 import { React, useRef } from "react";
-import LightSaver from "./lIGHTsAVER.JSX";
+import LightSaver from "./lightsaver";
 import InViewAnimation from "./InViewAnimation";
 const Home = () => {
   return (

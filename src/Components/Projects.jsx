@@ -3,7 +3,7 @@ import musicPlayer from "../assets/Music_player.png";
 import Netflix from "../assets/Netflix.png";
 import Todo from "../assets/Todoapp.png";
 import X from "../assets/X.png";
-import LightSaver from "./lIGHTsAVER.JSX";
+import LightSaver from './lightsaver'
 import InViewAnimation from "./InViewAnimation";
 
 const projects = [
