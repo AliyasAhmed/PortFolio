@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import Music from "./Music";
 import Projects from "./Projects";
 import InViewAnimation from "./InViewAnimation";
-import LightSaver from "./lIGHTsAVER.JSX";
+import LightSaver from "./LightSaver.JSX";
 
 const About = () => {
   return (
