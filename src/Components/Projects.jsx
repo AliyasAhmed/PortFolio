@@ -3,8 +3,9 @@ import musicPlayer from "../assets/Music_player.png";
 import Netflix from "../assets/Netflix.png";
 import Todo from "../assets/Todoapp.png";
 import X from "../assets/X.png";
-import LightSaver from './Line'
+import LightSaver from "./Line";
 import InViewAnimation from "./InViewAnimation";
+import {motion} from 'motion/react'
 
 const projects = [
   {
@@ -89,11 +90,13 @@ const Projects = () => {
           <LightSaver />
           <InViewAnimation className="z-[2] ">
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <button
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
                 className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass} `}
               >
                 {project.buttonText}
-              </button>
+              </motion.button>
             </a>
           </InViewAnimation>
         </React.Fragment>
