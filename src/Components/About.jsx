@@ -11,7 +11,7 @@ const About = () => {
         id="about"
         className=" min-h-screen flex flex-col items-center md:text-xl"
       >
-        <InViewAnimation className=" flex items-center justify-start rounded-xl shadow-md border-border text-5xl w-[35vw] xl:w-[10rem] md:w-[25vw] h-[9vh] backdrop-blur-sm border p-5 overflow-hidden">
+        <InViewAnimation className=" flex items-center justify-start rounded-xl shadow-md border-border text-5xl w-[44vw] xl:w-[10rem] md:w-[20vw] h-[9vh] backdrop-blur-sm border p-5 overflow-hidden">
           <h1 className=" typewriter ">Hey!</h1>
         </InViewAnimation>
         <LightSaver />
