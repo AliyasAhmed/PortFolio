@@ -9,7 +9,6 @@ import {motion} from 'motion/react'
 
 const projects = [
   {
-    id: 1,
     title: "Music Player",
     image: musicPlayer,
     imageClass:
@@ -22,7 +21,6 @@ const projects = [
     buttonText: "Music Player",
   },
   {
-    id: 2,
     title: "Todo App",
     image: Todo,
     imageClass: "rounded-lg hover:scale-[90%] transition-all",
@@ -34,7 +32,6 @@ const projects = [
     buttonText: "Todo App",
   },
   {
-    id: 3,
     title: "Netflix Clone",
     image: Netflix,
     imageClass: "w-auto h-auto hover:scale-[90%] transition-all",
@@ -43,10 +40,10 @@ const projects = [
       "Visit the link below to learn more about this initiative.",
     ],
     link: "https://aliyasahmed.github.io/Netflix-clone/",
-    buttonText: "Netflix",
+    buttonText: "NETFLIX",
+    // buttonimg:NetBtn,
   },
   {
-    id: 4,
     title: "X Clone",
     image: X,
     imageClass: "rounded-lg w-auto h-auto hover:scale-[90%] transition-all",
@@ -57,6 +54,7 @@ const projects = [
     link: "https://aliyasahmed.github.io/projectX/",
     buttonText: "X",
     buttonClass: "w-[6rem]",
+    // buttonimg:x,
   },
 ];
 
@@ -68,12 +66,12 @@ const Projects = () => {
         <p className="transition-all animate-pulse">Software Projects</p>
       </div>
 
-      {projects.map((project) => (
-        <React.Fragment key={project.id}>
+      {projects.map((project, index) => (
+        <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl text-justify">
-            <p className="m-3 lg:text-xl">{project.title}</p>
+          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl text-justify m-3 lg:text-xl">
+            <p>{project.title}</p>
             <img
               className={project.imageClass}
               src={project.image}
@@ -95,7 +93,9 @@ const Projects = () => {
                 whileTap={{ scale: 0.95 }}
                 className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass} `}
               >
-                {project.buttonText}
+                {/* {project.buttonText} */}
+                {project.buttonimg?(<img className="w-5" src={project.buttonimg} alt="" />): (<span>{project.buttonText}</span>)}
+                
               </motion.button>
             </a>
           </InViewAnimation>

@@ -7,7 +7,7 @@ const Starbg = ({starCount = 600}) => {
         {[...Array(starCount)].map((_, i) => (
           <div
             key={i}
-            className="relative animate-starMove  rounded-full bg-[#f8f8f8] shadow-[0px_2px_10px_2px_aqua] overflow-hidden"
+            className="relative animate-starMove  rounded-full bg-[#ffffff] shadow-[0px_0px_20px_2px_aqua] overflow-hidden"
             style={{
               top: `${Math.floor(Math.random() * 1090)}vh`, // Randomize top position
               left: `${Math.random() * 90}%`, // Randomize left position
