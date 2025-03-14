@@ -11,19 +11,19 @@ const About = () => {
         id="about"
         className=" min-h-screen flex flex-col items-center md:text-xl"
       >
-        <InViewAnimation className=" flex items-center backdrop-blur-sm rounded-xl shadow-lg  border-border p-4 bg-bg text-5xl">
+        <InViewAnimation className=" flex items-center justify-start rounded-xl shadow-md border-border text-5xl w-[35vw] xl:w-[10rem] md:w-[25vw] h-[9vh] backdrop-blur-sm border p-5 overflow-hidden">
           <h1 className=" typewriter ">Hey!</h1>
         </InViewAnimation>
         <LightSaver />
         {/* technologies showcase */}
 
-        <div className="z-[1] scrollAnim flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
+        <div className="z-[1] flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">technologies i use</p>
         </div>
         <LightSaver/>
 
         {/* skillSet */}
-        <InViewAnimation className="scrollAnim w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden">
+        <InViewAnimation className=" w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden">
           <div className="fromleft flex gap-[3rem] left-0">
             <img className="" width="35vw" src="html.svg" alt="HTML Icon" />
             <img className="" width="35vw" src="css.svg" alt="CSS Icon" />

@@ -71,7 +71,7 @@ const Projects = () => {
           <LightSaver />
 
           <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl text-justify m-3 lg:text-xl">
-            <p>{project.title}</p>
+            <p className="p-2">{project.title}</p>
             <img
               className={project.imageClass}
               src={project.image}
