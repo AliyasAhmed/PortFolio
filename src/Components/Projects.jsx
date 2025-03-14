@@ -62,9 +62,9 @@ const Projects = () => {
   return (
     <>
       <LightSaver />
-      <div className="z-[1]  flex bg-[#ffffff] justify-center items-center rounded-2xl p-6 text-black shadow-lg shadow-white">
+      <InViewAnimation className="z-[1]  flex bg-[#ffffff] justify-center items-center rounded-2xl p-6 text-black shadow-lg shadow-white">
         <p className="transition-all animate-pulse">Software Projects</p>
-      </div>
+      </InViewAnimation>
 
       {projects.map((project, index) => (
         <React.Fragment key={index}>

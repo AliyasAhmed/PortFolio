@@ -6,7 +6,7 @@ const Starbg = ({ starCount = 50 }) => {
       top: `${Math.floor(Math.random() * 100)}vh`, // Reduce range for better distribution
       left: `${Math.random() * 100}%`, // Spread evenly
       size: `${Math.floor(Math.random() * 3) + 1}px`, // Random size
-      duration: `${Math.random() * 5 + 3}s`, // Animation speed
+      duration: `${Math.random() * 20 + 3}s`, // Animation speed
     }));
   }, [starCount]); // Only re-run if starCount changes
 
@@ -15,7 +15,7 @@ const Starbg = ({ starCount = 50 }) => {
       {stars.map((star, i) => (
         <div
           key={i}
-          className="fixed animate-starMove rounded-full bg-white"
+          className="absolute animate-starMove rounded-full bg-white"
           style={{
             top: star.top,
             left: star.left,

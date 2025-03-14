@@ -17,9 +17,9 @@ const About = () => {
         <LightSaver />
         {/* technologies showcase */}
 
-        <div className="z-[1] flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
+        <InViewAnimation className="z-[1] flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">technologies i use</p>
-        </div>
+        </InViewAnimation>
         <LightSaver/>
 
         {/* skillSet */}

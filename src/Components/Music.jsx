@@ -4,7 +4,6 @@ import LightSaver from "./Line";
 
 const musicProjects = [
   {
-    id: 1,
     videoSrc: "https://www.youtube.com/embed/bQH0t_R81Eo?si=Bxx8TkOSadLx_mUF",
     title: "Project 1",
     description: `I wrote this song in 2021 and released it in 2023. I mixed and
@@ -17,7 +16,6 @@ const musicProjects = [
     500k on their channel and 480k on mine.`
   },
   {
-    id: 2,
     videoSrc: "https://www.youtube.com/embed/OM-wp8PIrqc?si=c_0zZ007hUpFg0PA",
     title: "Project 2",
     description: `In addition, this music was a contract for the label I worked for.
@@ -27,7 +25,19 @@ const musicProjects = [
     own studio at the end of the year before sending it to the label.
     The contract took four months to settle, and they released it. I
     created the official music video on my own channel.`
-  }
+  },
+  {
+    videoSrc: "https://www.youtube.com/embed/fimLPvb4klY?si=5Is34ZLOSDzg4yjk",
+    title: "Project 2",
+    description: `This music was another contract for the label I worked for.
+    It was also released in 2023, but this time Label took the charge of cinematography
+    and editing. I wrote the song in 22 and gave it time to improve
+    its quality and other aspects before mixing and mastering it in my
+    own studio at the end of the year before sending it to the label.
+    The contract took Three months to settle, and they released it. I
+    re-Released the official Animated video on my own channel.`
+  },
+
 ];
 
 const Music = () => {
@@ -46,8 +56,8 @@ const Music = () => {
         always desired.
       </InViewAnimation>
       <LightSaver/>
-      {musicProjects.map((project) => (
-        <React.Fragment key={project.id}>
+      {musicProjects.map((project,index) => (
+        <React.Fragment key={index}>
           <div className="flex flex-col justify-center content-center">
             <InViewAnimation className="flex flex-col z-[1] backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md md:text-2xl text-justify">
               <iframe
