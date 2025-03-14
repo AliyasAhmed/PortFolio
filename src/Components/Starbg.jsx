@@ -13,8 +13,8 @@ const Starbg = ({starCount = 600}) => {
               left: `${Math.random() * 90}%`, // Randomize left position
               height: `${Math.floor(Math.random() * 2 + 1)}px`, // Randomize size
               width: `${Math.floor(Math.random() * 2 + 1)}px`, // Match size with height
-              animationDuration: `${Math.random() * 7 + 1}s`, // Randomize animation speed
-              // animationDelay: `${20}s`,
+              animationDuration: `${Math.random() * 10 + 1}s`, // Randomize animation speed
+              // animationDelay: `${40}s`,
 
             }}
           ></div>
