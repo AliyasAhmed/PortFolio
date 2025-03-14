@@ -27,7 +27,7 @@ const Home = () => {
 
         className="flex  items-center p-6 border border-border backdrop-blur-sm rounded-2xl md:text-4xl bg-bg "
       >
-        <h1 className=" typewriter">Welcome To my Portfolio</h1>
+        <h1 className=" ">Welcome To my Portfolio</h1>
       </InViewAnimation>
       {/* Decorative Line */}
       <LightSaver/>
