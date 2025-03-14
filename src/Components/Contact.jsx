@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className=" flex flex-col justify-center p-5 backdrop-blur-sm bg-[#00000000] shadow shadow-shadow  border border-border rounded-md w-full ">
+      <div className=" flex flex-col justify-center p-5 backdrop-blur-sm shadow shadow-shadow border border-border rounded-md w-full ">
         {/* Header Section */}
         <section className="text-center mb-10">
           <h1 className="text-4xl font-bold text-[#01C38D] mb-4">
@@ -33,7 +33,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Form Section */}
-        <InViewAnimation className="max-w-4xl mx-auto bg-[#00000025] shadow-lg rounded-lg p-6">
+        <InViewAnimation className="max-w-4xl mx-auto rounded-lg p-6">
           <form
             className="grid grid-cols-1 gap-6"
             action="https://formspree.io/f/xwppwbvd"
@@ -54,7 +54,7 @@ const Contact = () => {
                 placeholder="Enter your name"
                 value={formFill.name}
                 onChange={handleInputChange}
-                className="mt-1 block w-full p-2 border border-border bg-[#0000009d] backdrop-blur-md text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
+                className="mt-1 block w-full p-2 border border-border bg-[#0000009d] text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
                 required
               />
             </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                 placeholder="Enter your email"
                 value={formFill.email}
                 onChange={handleInputChange}
-                className="mt-1 block w-full p-2 border border-border bg-[#0000009d] backdrop-blur-md text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
+                className="mt-1 block w-full p-2 border border-border bg-[#0000009d] text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
                 required
               />
             </div>
@@ -90,7 +90,7 @@ const Contact = () => {
                 rows="5"
                 value={formFill.message}
                 onChange={handleInputChange}
-                className="mt-1 block w-full p-2 border border-border bg-[#000000] backdrop-blur-md text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#01C38D]"
+                className="mt-1 block w-full p-2 border border-border bg-[#000000] text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#01C38D]"
                 required
               ></textarea>
             </div>

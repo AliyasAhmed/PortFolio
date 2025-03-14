@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <>
       <LightSaver />
-      <div className="z-[1]  flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-auto overflow-hidden text-black shadow-lg shadow-white">
+      <div className="z-[1]  flex bg-[#ffffff] justify-center items-center rounded-2xl p-6 text-black shadow-lg shadow-white">
         <p className="transition-all animate-pulse">Software Projects</p>
       </div>
 
@@ -70,7 +70,7 @@ const Projects = () => {
         <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] overflow-hidden shadow-shadow shadow-lg md:text-2xl text-justify m-3 lg:text-xl">
+          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl text-justify m-3 lg:text-xl">
             <p className="p-2">{project.title}</p>
             <img
               className={project.imageClass}
