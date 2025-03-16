@@ -3,6 +3,8 @@ import musicPlayer from "../assets/Music_player.png";
 import Netflix from "../assets/Netflix.png";
 import Todo from "../assets/Todoapp.png";
 import X from "../assets/X.png";
+import Password from '../assets/PasswordManager.png'
+import wings from '../assets/Wings.png'
 import LightSaver from "./Line";
 import InViewAnimation from "./InViewAnimation";
 import {motion} from 'motion/react'
@@ -56,6 +58,20 @@ const projects = [
     buttonClass: "w-[6rem]",
     // buttonimg:x,
   },
+  {
+    title: "Password Manager",
+    image: Password,
+    imageClass: "rounded-lg w-auto h-auto hover:scale-[90%] transition-all",
+    descriptions: [
+      "Using React and Tailwind, I created this fully working password manager. It also has a full-stack version, however that version is not ready for deployment because authentication is required. This version saves the passwords in your browser, preventing unauthorised access..",
+      "Visit the link below to learn more about this initiative.",
+    ],
+    link: "https://password-manager-6l7n.vercel.app/",
+    // buttonText: wings,
+    buttonClass: "w-[6rem]",
+    buttonimg:wings,
+    imgClass:"w-15",
+  },
 ];
 
 const Projects = () => {
@@ -70,7 +86,7 @@ const Projects = () => {
         <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl text-justify m-3 lg:text-xl">
+          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl text-justify lg:text-xl">
             <p className="p-2">{project.title}</p>
             <img
               className={project.imageClass}
@@ -94,7 +110,7 @@ const Projects = () => {
                 className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass} `}
               >
                 {/* {project.buttonText} */}
-                {project.buttonimg?(<img className="w-5" src={project.buttonimg} alt="" />): (<span>{project.buttonText}</span>)}
+                {project.buttonimg?(<img className={project.imgClass} src={project.buttonimg} alt="" />): (<span>{project.buttonText}</span>)}
                 
               </motion.button>
             </a>
