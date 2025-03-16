@@ -4,7 +4,7 @@ import Netflix from "../assets/Netflix.png";
 import Todo from "../assets/Todoapp.png";
 import X from "../assets/X.png";
 import Password from '../assets/PasswordManager.png'
-import wings from '../assets/Wings.png'
+import wings from '../assets/Wings.svg'
 import LightSaver from "./Line";
 import InViewAnimation from "./InViewAnimation";
 import {motion} from 'motion/react'
@@ -31,7 +31,7 @@ const projects = [
       "Visit the link below to learn more about this initiative.",
     ],
     link: "https://what-to-do-gold.vercel.app/",
-    buttonText: "Todo App",
+    buttonText: "WhatToDo",
   },
   {
     title: "Netflix Clone",
@@ -67,10 +67,10 @@ const projects = [
       "Visit the link below to learn more about this initiative.",
     ],
     link: "https://password-manager-6l7n.vercel.app/",
-    // buttonText: wings,
-    buttonClass: "w-[6rem]",
-    buttonimg:wings,
-    imgClass:"w-15",
+    buttonText: "PassWrd",
+    buttonClass: "w-[15rem]",
+    // buttonimg:wings,
+    // imgClass:"w-15 hover:text-black",
   },
 ];
 
@@ -78,7 +78,7 @@ const Projects = () => {
   return (
     <>
       <LightSaver />
-      <InViewAnimation className="z-[1]  flex bg-[#ffffff] justify-center items-center rounded-2xl p-6 text-black shadow-lg shadow-white">
+      <InViewAnimation className="flex bg-[#ffffff] justify-center items-center rounded-2xl p-6 text-black shadow-lg shadow-white">
         <p className="transition-all animate-pulse">Software Projects</p>
       </InViewAnimation>
 
@@ -86,7 +86,7 @@ const Projects = () => {
         <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="z-[1]  border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl text-justify lg:text-xl">
+          <InViewAnimation className="border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl ">
             <p className="p-2">{project.title}</p>
             <img
               className={project.imageClass}
