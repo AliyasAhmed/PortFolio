@@ -68,7 +68,7 @@ const projects = [
     ],
     link: "https://password-manager-6l7n.vercel.app/",
     buttonText: "PassWrd",
-    buttonClass: "w-[15rem]",
+    buttonClass: "lg:w-[15rem] w-[9rem]",
     // buttonimg:wings,
     // imgClass:"w-15 hover:text-black",
   },
@@ -102,7 +102,7 @@ const Projects = () => {
           </InViewAnimation>
 
           <LightSaver />
-          <InViewAnimation className="z-[2] ">
+          <InViewAnimation>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.1 }}
