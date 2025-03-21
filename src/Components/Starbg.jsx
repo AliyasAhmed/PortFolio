@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-const Starbg = ({ starCount = 50 }) => {
+const Starbg = ({ starCount = 20 }) => {
   const stars = useMemo(() => {
     return Array.from({ length: starCount }).map(() => ({
       top: `${Math.floor(Math.random() * 100)}vh`, // Reduce range for better distribution

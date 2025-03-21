@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import InViewAnimation from "./InViewAnimation";
+import axios from "axios";
+
 
 const Contact = () => {
+
+  const [message, setmessage] = useState();
+
   const [formFill, setFormFill] = useState({
     name: "",
     email: "",
@@ -13,10 +18,28 @@ const Contact = () => {
     setFormFill({ ...formFill, [name]: value }); // Update the corresponding field in the state.
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Stop the browser from reloading the page on form submission.
-    e.target.submit(); // Send the form data to Formspree.
-    setFormFill({ name: "", email: "", message: "" }); // Reset the form fields to empty strings.
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const formData = new FormData(e.target);
+  
+    try {
+      const response = await axios.post("https://formspree.io/f/mnnppgjn", formData, {
+        headers: { Accept: "application/json" },
+      });
+  
+      if (response.status === 200) {
+        setmessage("Message sent successfully!");
+        setFormFill({ name: "", email: "", message: "" }); 
+      } else {
+        setmessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Network error. Please check your connection.");
+    }
+    setTimeout(() => {
+     setmessage("") 
+    },6000);
   };
 
   return (
@@ -24,7 +47,7 @@ const Contact = () => {
       <div className=" flex flex-col justify-center p-5 backdrop-blur-sm shadow shadow-shadow border border-border rounded-md w-full ">
         {/* Header Section */}
         <section className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-[#01C38D] mb-4">
+          <h1 className="text-4xl font-bold text-[#36ffc6] mb-4">
             Feel Free To Contact Me
           </h1>
           <p className="text-[#FFFFFF] text-lg max-w-3xl mx-auto">
@@ -36,10 +59,9 @@ const Contact = () => {
         <InViewAnimation className="max-w-4xl mx-auto rounded-lg p-6">
           <form
             className="grid grid-cols-1 gap-6"
-            action="https://formspree.io/f/xwppwbvd"
-            method="POST"
             onSubmit={handleSubmit}
           >
+            {message && (<p className="text-center text-[#36ffc6] font-medium">{message}</p>)}
             <div>
               <label
                 htmlFor="name"

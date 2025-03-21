@@ -4,7 +4,7 @@ import Projects from "./Projects";
 import InViewAnimation from "./InViewAnimation";
 import LightSaver from "./Line";
 
-const About = () => {
+export default function About() {
   return (
     <>
       <div
@@ -20,11 +20,11 @@ const About = () => {
         <InViewAnimation className="z-[1] flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">technologies i use</p>
         </InViewAnimation>
-        <LightSaver/>
+        <LightSaver />
 
         {/* skillSet */}
-        <InViewAnimation className=" w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden">
-          <div className="fromleft flex gap-[3rem] left-0">
+        <InViewAnimation className=" w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden ">
+          <div className="fromleft flex left-0 gap-[3rem]">
             <img className="" width="35vw" src="html.svg" alt="HTML Icon" />
             <img className="" width="35vw" src="css.svg" alt="CSS Icon" />
             <img className="" width="35vw" src="js.svg" alt="JavaScript Icon" />
@@ -59,11 +59,9 @@ const About = () => {
 
         {/* Software Projects*/}
         <Projects />
-        <LightSaver/>
+        <LightSaver />
         <Music />
       </div>
     </>
   );
-};
-
-export default About;
+}

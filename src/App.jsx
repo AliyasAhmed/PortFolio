@@ -3,8 +3,10 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import LocomotiveScroll from "locomotive-scroll";
 
 const App = () => {
+  const scroll = new LocomotiveScroll();
   return (
     <>
       <div className="app-container bg-black relative z-0 text-green-950">
@@ -27,17 +29,6 @@ const App = () => {
             <Contact />
           </div>
         </div>
-
-        {/* Background video */}
-        {/* <video autoPlay loop muted className="background-video">
-          <source
-            src="https://raw.githubusercontent.com/AliyasAhmed/media-files/f758c973df7fe6fa5db810faebb899342069b470/ForPc.mp4
-"
-            media="(max-width:1920px)"
-            type="video/mp4"
-          />
-        </video>
-        <div className="bg-[#000000b6]"></div> */}
       </div>
     </>
   );

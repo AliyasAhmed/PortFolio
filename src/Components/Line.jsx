@@ -6,7 +6,7 @@ const LightSaver = () => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
       className="h-[30vh] w-1 bg-white shadow-[0px_5px_22px_2px_aqua] "
