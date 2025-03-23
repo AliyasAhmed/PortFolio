@@ -1,6 +1,20 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
-const Starbg = ({ starCount = 20 }) => {
+const Starbg = ({ starCount = 30 }) => {
+  const [rotate, setrotate] = useState(0)
+
+  useEffect(()=>{
+    window.addEventListener("mousemove", (e)=>{
+      let mouseX = e.clientX
+      let mouseY = e.clientY
+
+      let DeltaX = mouseX - window.innerWidth/2
+      let DeltaY = mouseY - window.innerHeight/2
+
+      let angle = Math.atan2(DeltaY, DeltaX) * (180/Math.PI)
+      setrotate(angle - 180)
+    })
+  })
   const stars = useMemo(() => {
     return Array.from({ length: starCount }).map(() => ({
       top: `${Math.floor(Math.random() * 100)}vh`, // Reduce range for better distribution
@@ -11,12 +25,13 @@ const Starbg = ({ starCount = 20 }) => {
   }, [starCount]); // Only re-run if starCount changes
 
   return (
-    <div className="fixed min-h-screen w-full">
+    <div style={{transform:`rotate(${rotate}deg)`, transition: "transform 0.6s cubic-bezier(10.25, 12, 0.7, 12)"}} className="fixed min-h-screen w-full">
       {stars.map((star, i) => (
         <div
           key={i}
           className="absolute animate-starMove rounded-full bg-white"
           style={{
+            
             top: star.top,
             left: star.left,
             height: star.size,
@@ -30,3 +45,6 @@ const Starbg = ({ starCount = 20 }) => {
 };
 
 export default Starbg;
+
+
+

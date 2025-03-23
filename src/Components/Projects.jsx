@@ -82,10 +82,10 @@ const Projects = () => {
       </InViewAnimation>
 
       {projects.map((project, index) => (
-        <React.Fragment key={index}>
+        <React.Fragment key={index} >
           <LightSaver />
 
-          <InViewAnimation className="border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
+          <InViewAnimation  className="border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
             <p className="p-2">{project.title}</p>
             <motion.img
               whileHover={{
