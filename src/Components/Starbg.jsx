@@ -1,37 +1,165 @@
+// import React, { useEffect, useMemo, useState } from "react";
+
+// const Starbg = ({ starCount = 30 }) => {
+//   const [position, setPosition] = useState({ x: 0, y: 0 });
+
+//   useEffect(() => {
+//     const handleMouseMove = (e) => {
+//       const mouseX = e.clientX - window.innerWidth / 2;
+//       const mouseY = e.clientY - window.innerHeight / 2;
+      
+//       setPosition({
+//         x: mouseX * 0.08,
+//         y: mouseY * 0.08
+//       });
+//     };
+
+//     const handleTouchMove = (e) => {
+//       const touch = e.touches[0];
+//       const touchX = touch.clientX - window.innerWidth / 2;
+//       const touchY = touch.clientY - window.innerHeight / 2;
+      
+//       setPosition({
+//         x: touchX * 0.08,
+//         y: touchY * 0.08
+//       });
+//     };
+
+//     window.addEventListener("mousemove", handleMouseMove);
+//     window.addEventListener("touchmove", handleTouchMove);
+
+//     return () => {
+//       window.removeEventListener("mousemove", handleMouseMove);
+//       window.removeEventListener("touchmove", handleTouchMove);
+//     };
+//   }, []);
+
+//   const stars = useMemo(() => {
+//     return Array.from({ length: starCount }).map(() => ({
+//       top: `${Math.floor(Math.random() * 100)}vh`,
+//       left: `${Math.random() * 100}%`,
+//       size: `${Math.floor(Math.random() * 3) + 1}px`,
+//       duration: `${Math.random() * 20 + 3}s`,
+//     }));
+//   }, [starCount]);
+
+//   return (
+//     <div 
+//       style={{
+//         transform: `translate(${position.x}px, ${position.y}px)`,
+//         transition: "transform 0.3s linear",
+//       }} 
+//       className="fixed min-h-screen w-full"
+//     >
+//       {stars.map((star, i) => (
+//         <div
+//           key={i}
+//           className="absolute animate-starMove rounded-full bg-white"
+//           style={{
+//             top: star.top,
+//             left: star.left,
+//             height: star.size,
+//             width: star.size,
+//             animationDuration: star.duration,
+//           }}
+//         />
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default Starbg;
+
+
 import React, { useEffect, useMemo, useState } from "react";
 
 const Starbg = ({ starCount = 30 }) => {
-  const [rotate, setrotate] = useState(0)
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(()=>{
-    window.addEventListener("mousemove", (e)=>{
-      let mouseX = e.clientX
-      let mouseY = e.clientY
+  useEffect(() => {
+    // Mouse movement handler
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX - window.innerWidth / 2;
+      const mouseY = e.clientY - window.innerHeight / 2;
+      
+      setPosition({
+        x: mouseX * 0.08,
+        y: mouseY * 0.08
+      });
+    };
 
-      let DeltaX = mouseX - window.innerWidth/2
-      let DeltaY = mouseY - window.innerHeight/2
+    // Touch movement handler
+    const handleTouchMove = (e) => {
+      const touch = e.touches[0];
+      const touchX = touch.clientX - window.innerWidth / 2;
+      const touchY = touch.clientY - window.innerHeight / 2;
+      
+      setPosition({
+        x: touchX * 0.08,
+        y: touchY * 0.08
+      });
+    };
 
-      let angle = Math.atan2(DeltaY, DeltaX) * (180/Math.PI)
-      setrotate(angle - 180)
-    })
-  })
+    // Device orientation handler
+    const handleOrientation = (e) => {
+      const gamma = e.gamma; // Left/right tilt (degrees)
+      const beta = e.beta; // Front/back tilt (degrees)
+      
+      // Adjust these multipliers to control rotation sensitivity
+      setPosition({
+        x: gamma * 2.5, // Horizontal movement
+        y: beta * 0.8   // Vertical movement
+      });
+    };
+
+    // Add event listeners
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
+    
+    // Add device orientation listener with iOS permission check
+    if (typeof DeviceOrientationEvent !== 'undefined' && 
+        typeof DeviceOrientationEvent.requestPermission === 'function') {
+      DeviceOrientationEvent.requestPermission()
+        .then(permission => {
+          if (permission === 'granted') {
+            window.addEventListener('deviceorientation', handleOrientation);
+          }
+        })
+        .catch(console.error);
+    } else {
+      window.addEventListener('deviceorientation', handleOrientation);
+    }
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener('deviceorientation', handleOrientation);
+    };
+  }, []);
+
   const stars = useMemo(() => {
     return Array.from({ length: starCount }).map(() => ({
-      top: `${Math.floor(Math.random() * 100)}vh`, // Reduce range for better distribution
-      left: `${Math.random() * 100}%`, // Spread evenly
-      size: `${Math.floor(Math.random() * 3) + 1}px`, // Random size
-      duration: `${Math.random() * 20 + 3}s`, // Animation speed
+      top: `${Math.floor(Math.random() * 100)}vh`,
+      left: `${Math.random() * 100}%`,
+      size: `${Math.floor(Math.random() * 3) + 1}px`,
+      duration: `${Math.random() * 20 + 3}s`,
     }));
-  }, [starCount]); // Only re-run if starCount changes
+  }, [starCount]);
 
   return (
-    <div style={{transform:`rotate(${rotate}deg)`, transition: "transform 0.6s cubic-bezier(10.25, 12, 0.7, 12)"}} className="fixed min-h-screen w-full">
+    <div 
+      style={{
+        transform: `translate(${position.x}px, ${position.y}px)`,
+        transition: "transform 0.3s linear",
+      }} 
+      className="fixed min-h-screen w-full"
+    >
       {stars.map((star, i) => (
         <div
           key={i}
           className="absolute animate-starMove rounded-full bg-white"
           style={{
-            
             top: star.top,
             left: star.left,
             height: star.size,
@@ -45,6 +173,3 @@ const Starbg = ({ starCount = 30 }) => {
 };
 
 export default Starbg;
-
-
-
