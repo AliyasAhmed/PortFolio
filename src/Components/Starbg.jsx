@@ -1,76 +1,3 @@
-// import React, { useEffect, useMemo, useState } from "react";
-
-// const Starbg = ({ starCount = 30 }) => {
-//   const [position, setPosition] = useState({ x: 0, y: 0 });
-
-//   useEffect(() => {
-//     const handleMouseMove = (e) => {
-//       const mouseX = e.clientX - window.innerWidth / 2;
-//       const mouseY = e.clientY - window.innerHeight / 2;
-      
-//       setPosition({
-//         x: mouseX * 0.08,
-//         y: mouseY * 0.08
-//       });
-//     };
-
-//     const handleTouchMove = (e) => {
-//       const touch = e.touches[0];
-//       const touchX = touch.clientX - window.innerWidth / 2;
-//       const touchY = touch.clientY - window.innerHeight / 2;
-      
-//       setPosition({
-//         x: touchX * 0.08,
-//         y: touchY * 0.08
-//       });
-//     };
-
-//     window.addEventListener("mousemove", handleMouseMove);
-//     window.addEventListener("touchmove", handleTouchMove);
-
-//     return () => {
-//       window.removeEventListener("mousemove", handleMouseMove);
-//       window.removeEventListener("touchmove", handleTouchMove);
-//     };
-//   }, []);
-
-//   const stars = useMemo(() => {
-//     return Array.from({ length: starCount }).map(() => ({
-//       top: `${Math.floor(Math.random() * 100)}vh`,
-//       left: `${Math.random() * 100}%`,
-//       size: `${Math.floor(Math.random() * 3) + 1}px`,
-//       duration: `${Math.random() * 20 + 3}s`,
-//     }));
-//   }, [starCount]);
-
-//   return (
-//     <div 
-//       style={{
-//         transform: `translate(${position.x}px, ${position.y}px)`,
-//         transition: "transform 0.3s linear",
-//       }} 
-//       className="fixed min-h-screen w-full"
-//     >
-//       {stars.map((star, i) => (
-//         <div
-//           key={i}
-//           className="absolute animate-starMove rounded-full bg-white"
-//           style={{
-//             top: star.top,
-//             left: star.left,
-//             height: star.size,
-//             width: star.size,
-//             animationDuration: star.duration,
-//           }}
-//         />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Starbg;
-
-
 import React, { useEffect, useMemo, useState } from "react";
 
 const Starbg = ({ starCount = 30 }) => {
@@ -88,18 +15,6 @@ const Starbg = ({ starCount = 30 }) => {
       });
     };
 
-    // Touch movement handler
-    const handleTouchMove = (e) => {
-      const touch = e.touches[0];
-      const touchX = touch.clientX - window.innerWidth / 2;
-      const touchY = touch.clientY - window.innerHeight / 2;
-      
-      setPosition({
-        x: touchX * 0.08,
-        y: touchY * 0.08
-      });
-    };
-
     // Device orientation handler
     const handleOrientation = (e) => {
       const gamma = e.gamma; // Left/right tilt (degrees)
@@ -114,7 +29,6 @@ const Starbg = ({ starCount = 30 }) => {
 
     // Add event listeners
     window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("touchmove", handleTouchMove);
     
     // Add device orientation listener with iOS permission check
     if (typeof DeviceOrientationEvent !== 'undefined' && 
@@ -133,7 +47,6 @@ const Starbg = ({ starCount = 30 }) => {
     // Cleanup
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener('deviceorientation', handleOrientation);
     };
   }, []);
