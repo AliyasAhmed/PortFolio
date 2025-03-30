@@ -50,7 +50,6 @@ body {
   padding-top: 80px;
 }
 
-
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -67,7 +66,6 @@ body {
 .fromleft:hover {
   animation-play-state: paused;
 }
-
 
 .glowlight {
   overflow: hidden;
@@ -149,3 +147,31 @@ body {
 }
 
 /* for trial */
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    /* scale: 0.2; */
+    filter: blur(6px);
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    /* scale: 1; */
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.fromdown {
+  animation: slide 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+}

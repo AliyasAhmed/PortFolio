@@ -11,7 +11,7 @@ const Navbar = () => {
       <div>
         {/* Hamburger Icon */}
         <button
-          className="fixed top-4 left-4 z-20 bg-bg backdrop-blur-sm border border-[#5353534b] p-2 rounded-md hover:bg-[#ffffff] hover:shadow-white shadow-lg transition-all hover:text-black "
+          className="fixed fromdown top-4 left-4 z-20 bg-bg backdrop-blur-sm border border-[#5353534b] p-2 rounded-md hover:bg-[#ffffff] hover:shadow-white shadow-lg transition-all hover:text-black "
           onClick={toggleMenu}
         >
           {isOpen ? <span>X</span> : <span>☰</span>}
@@ -20,7 +20,7 @@ const Navbar = () => {
         {/* Sidebar */}
         <div
           className={`fixed top-0 left-0 h-[20rem] w-[12rem] bg-[#00000050] backdrop-blur-md transition-all duration-300 z-10 rounded-lg ${
-            isOpen ? "translate-x-0 " : "-translate-x-full hidden"
+            isOpen ? "translate-x-0 " : "-translate-x-full hidden fromdown "
           }`}
         >
           <div className="flex flex-col items-center mt-20 space-y-6">
