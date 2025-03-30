@@ -16,7 +16,7 @@
   font-style: normal;
 }
 :root {
-  --bg: rgba(0, 0, 0, 0.199);
+  --bg: rgb(0, 0, 0);
   --border: rgba(0, 70, 75, 0.253);
   --text: #ffffff;
   --shadow: rgba(0, 84, 90, 0.336);
