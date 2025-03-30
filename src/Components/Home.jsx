@@ -2,9 +2,7 @@ import { React, useRef } from "react";
 import InViewAnimation from "./InViewAnimation";
 import LightSaver from "./Line";
 
-
 const Home = () => {
-
   return (
     <>
       <section
@@ -12,18 +10,30 @@ const Home = () => {
         className="min-h-screen flex flex-col items-center md:text-2xl"
       >
         {/* GitHub Link */}
-        <div className="fixed top-5 right-5 w-10 z-10">
+        <div className="fixed top-5 right-5 z-10">
           <a
             href="https://github.com/AliyasAhmed"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="github-mark.svg"
-              loading="lazy"
-              alt="GitHub"
-              className="w-full"
-            />
+            <div className="lg:hidden sm:hidden w-10">
+              <img
+                src="github-mark.svg"
+                loading="lazy"
+                alt="GitHub"
+                className="w-full"
+              />
+            </div>
+            <div className="hidden lg:block md:block">
+              <lord-icon
+                src="https://cdn.lordicon.com/lllcnxva.json"
+                trigger="hover"
+                colors="primary:#000,secondary:#000,tertiary:#fff"
+                loading="lazy"
+                alt="GitHub"
+                style={{ width: "55px", height: "55px" }}
+              ></lord-icon>
+            </div>
           </a>
         </div>
         {/* Welcome Message */}
