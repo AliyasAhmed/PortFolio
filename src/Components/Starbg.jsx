@@ -11,7 +11,7 @@ const Starbg = ({ starCount = 30 }) => {
       
       setPosition({
         x: mouseX * 0.08,
-        y: mouseY * 0.08
+        y: mouseY * 0.10
       });
     };
 
@@ -22,8 +22,8 @@ const Starbg = ({ starCount = 30 }) => {
       
       // Adjust these multipliers to control rotation sensitivity
       setPosition({
-        x: gamma * 2.5, // Horizontal movement
-        y: beta * 0.8   // Vertical movement
+        x: gamma * 2, // Horizontal movement
+        y: beta * 0.10   // Vertical movement
       });
     };
 
@@ -56,7 +56,7 @@ const Starbg = ({ starCount = 30 }) => {
       top: `${Math.floor(Math.random() * 100)}vh`,
       left: `${Math.random() * 100}%`,
       size: `${Math.floor(Math.random() * 3) + 1}px`,
-      duration: `${Math.random() * 20 + 3}s`,
+      duration: `${Math.random() * 30 + 3}s`,
     }));
   }, [starCount]);
 

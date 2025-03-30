@@ -1,7 +1,10 @@
 import { React, useRef } from "react";
 import InViewAnimation from "./InViewAnimation";
 import LightSaver from "./Line";
+
+
 const Home = () => {
+
   return (
     <>
       <section
@@ -24,7 +27,7 @@ const Home = () => {
           </a>
         </div>
         {/* Welcome Message */}
-        <InViewAnimation className="flex items-center p-6 border border-border backdrop-blur-sm rounded-2xl lg:text-5xl md:text-4xl bg-bg ">
+        <InViewAnimation className="flex items-center p-6 border border-border backdrop-blur-sm rounded-2xl lg:text-4xl md:text-4xl bg-bg ">
           <h1 className="typewriter">Welcome To my Portfolio</h1>
         </InViewAnimation>
         {/* Decorative Line */}

@@ -1,5 +1,6 @@
 import { React, useRef } from "react";
 import { motion, useInView } from "motion/react";
+
 const LightSaver = () => {
   const ref = useRef();
   const isInView = useInView(ref, { once: false });
