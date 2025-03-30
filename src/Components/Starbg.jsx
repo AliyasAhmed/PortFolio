@@ -23,7 +23,7 @@ const Starbg = ({ starCount = 30 }) => {
       // Adjust these multipliers to control rotation sensitivity
       setPosition({
         x: gamma * 2, // Horizontal movement
-        y: beta * 0.50   // Vertical movement
+        y: beta * 1   // Vertical movement
       });
     };
 
