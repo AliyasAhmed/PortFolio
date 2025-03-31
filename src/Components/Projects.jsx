@@ -4,10 +4,11 @@ import Netflix from "../assets/Netflix.png";
 import Todo from "../assets/Todoapp.png";
 import X from "../assets/X.png";
 import Password from "../assets/PasswordManager.png";
-import wings from "../assets/Wings.svg";
+import xgif from "../assets/gif/x.gif";
 import LightSaver from "./Line";
 import InViewAnimation from "./InViewAnimation";
 import { motion } from "motion/react";
+import speaker from "../assets/gif/musicplayer.gif";
 
 const projects = [
   {
@@ -20,11 +21,14 @@ const projects = [
     ],
     link: "https://musicplayerclone.freewebhostmost.com/",
     buttonText: "Music Player",
+    buttonimg: speaker,
+    buttonClass: "w-[25vw] lg:w-[11vw] flex justify-center",
+    imgClass: "w-[8vw] lg:w-[3.5vw]",
   },
   {
     title: "Todo App",
     image: Todo,
-    imageClass: "rounded-lg  ",
+    imageClass: "rounded-lg",
     descriptions: [
       "When I was studying React and Tailwind, I created this to-do app because I wanted to create a project that wasn't in HTML, CSS, or JS, and React was ideal for that. I created this using Tailwind and React. It can add, delete, and edit tasks, and it uses the browser's storage to save the most recent tasks so you don't lose any. It can do anything that other tasks can accomplish. it is responsive for any device.",
       "Visit the link below to learn more about this initiative.",
@@ -54,13 +58,14 @@ const projects = [
     ],
     link: "https://project-x-ruddy.vercel.app/",
     buttonText: "X",
-    buttonClass: "w-[6rem]",
-    // buttonimg:x,
+    buttonClass: "w-[25vw] lg:w-[4vw] flex justify-center",
+    buttonimg: xgif,
+    imgClass: "w-[7vw]",
   },
   {
     title: "Password Manager",
     image: Password,
-    imageClass: "rounded-lg w-auto h-auto  ",
+    imageClass: "rounded-lg w-auto h-auto",
     descriptions: [
       "Using React and Tailwind, I created this fully working password manager. It also has a full-stack version, however that version is not ready for deployment because authentication is required. This version saves the passwords in your browser, preventing unauthorised access..",
       "Visit the link below to learn more about this initiative.",
@@ -82,10 +87,10 @@ const Projects = () => {
       </InViewAnimation>
 
       {projects.map((project, index) => (
-        <React.Fragment key={index} >
+        <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation  className="backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
+          <InViewAnimation className="backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
             <p className="p-2">{project.title}</p>
             <motion.img
               whileHover={{
