@@ -22,8 +22,8 @@ const projects = [
     link: "https://musicplayerclone.freewebhostmost.com/",
     buttonText: "Music Player",
     buttonimg: speaker,
-    buttonClass: "w-[25vw] lg:w-[11vw] flex justify-center",
-    imgClass: "w-[8vw] lg:w-[3.5vw]",
+    buttonClass: "w-[25vw] lg:w-[9vw] flex justify-center",
+    imgClass: "w-[8vw] lg:w-[3vw]",
   },
   {
     title: "Todo App",
