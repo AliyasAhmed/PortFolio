@@ -67,7 +67,7 @@ const projects = [
     ],
     link: "https://password-manager-6l7n.vercel.app/",
     buttonText: "PassWrd",
-    buttonClass: "lg:w-[15rem] w-[9rem]",
+    buttonClass: "lg:w-[15rem] md:w-[18rem] w-[9rem]",
     // buttonimg:wings,
     // imgClass:"w-15 hover:text-black",
   },
@@ -85,7 +85,7 @@ const Projects = () => {
         <React.Fragment key={index} >
           <LightSaver />
 
-          <InViewAnimation  className="border border-border backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
+          <InViewAnimation  className="backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
             <p className="p-2">{project.title}</p>
             <motion.img
               whileHover={{
