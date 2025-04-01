@@ -22,8 +22,8 @@ const projects = [
     link: "https://musicplayerclone.freewebhostmost.com/",
     buttonText: "Music Player",
     buttonimg: speaker,
-    buttonClass: "w-[25vw] lg:w-[9vw] flex justify-center",
-    imgClass: "w-[8vw] lg:w-[3vw]",
+    buttonClass: "w-[25vw] lg:w-[10vw] md:w-[15vw] flex justify-center",
+    imgClass: "w-[8vw] lg:w-[2.9vw] md:w-[4vw]",
   },
   {
     title: "Todo App",
@@ -58,9 +58,9 @@ const projects = [
     ],
     link: "https://project-x-ruddy.vercel.app/",
     buttonText: "X",
-    buttonClass: "w-[25vw] lg:w-[4vw] flex justify-center",
+    buttonClass: "w-[25vw] lg:w-[6vw] md:w-[10vw] flex justify-center",
     buttonimg: xgif,
-    imgClass: "w-[7vw]",
+    imgClass: "w-[2vw]",
   },
   {
     title: "Password Manager",
