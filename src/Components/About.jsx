@@ -11,8 +11,8 @@ export default function About() {
         id="about"
         className=" min-h-screen flex flex-col items-center md:text-xl"
       >
-        <InViewAnimation className=" flex items-center justify-start rounded-xl shadow-md border-border text-5xl w-[44vw] xl:w-[30vw] md:w-[20vw] h-[9vh] backdrop-blur-sm border p-5 overflow-hidden">
-          <h1 className=" typewriter ">Welcome aboard!</h1>
+        <InViewAnimation className="flex items-center justify-start rounded-xl shadow-md border-border lg:text-5xl xl:w-[30vw] md:w-[20vw] h-[9vh] backdrop-blur-sm border p-5 overflow-hidden">
+          <h1 className="typewriter">Welcome aboard!</h1>
         </InViewAnimation>
         <LightSaver />
         {/* technologies showcase */}
