@@ -4,12 +4,14 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import LocomotiveScroll from "locomotive-scroll";
+import Starbg from "./Components/Starbg";
 
 const App = () => {
   const scroll = new LocomotiveScroll();
   return (
     <>
       <div className="app-container bg-black relative z-0 text-green-950">
+    <Starbg/>
         {/* Navbar */}
         <Navbar />
 

@@ -38,7 +38,7 @@ const Home = () => {
         </div>
         {/* Welcome Message */}
         <InViewAnimation className="flex items-center p-6 border border-border backdrop-blur-sm rounded-2xl lg:text-4xl md:text-4xl bg-bg ">
-          <h1 className="typewriter">i am aliyas ahmed</h1>
+          <h1 className="">i am aliyas ahmed</h1>
         </InViewAnimation>
         {/* Decorative Line */}
         <LightSaver />

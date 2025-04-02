@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Starbg from "./Starbg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -7,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-    <Starbg/>
+    
       <div>
         {/* Hamburger Icon */}
         <button

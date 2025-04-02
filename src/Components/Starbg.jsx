@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-const Starbg = ({ starCount = 30 }) => {
+const Starbg = ({ starCount = 20 }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -80,6 +80,7 @@ const Starbg = ({ starCount = 30 }) => {
             height: star.size,
             width: star.size,
             animationDuration: star.duration,
+            willChange: "transform"
           }}
         />
       ))}
@@ -88,3 +89,4 @@ const Starbg = ({ starCount = 30 }) => {
 };
 
 export default Starbg;
+
