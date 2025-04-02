@@ -60,7 +60,7 @@ const projects = [
     buttonText: "X",
     buttonClass: "w-[25vw] lg:w-[6vw] md:w-[10vw] flex justify-center",
     buttonimg: xgif,
-    imgClass: "w-[2vw]",
+    imgClass: "w-[6vw]",
   },
   {
     title: "Password Manager",
