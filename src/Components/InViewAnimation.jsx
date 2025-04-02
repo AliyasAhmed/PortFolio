@@ -9,7 +9,7 @@ const InViewAnimation = ({ children, className, animationProps }) => {
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1.2 }}
       className={className} // Allow passing custom classes
       {...animationProps} // Allow passing custom animation props
     >

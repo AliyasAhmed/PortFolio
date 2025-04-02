@@ -90,22 +90,24 @@ const Projects = () => {
         <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden ">
+          <InViewAnimation className="backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden border border-border">
             <p className="p-2">{project.title}</p>
-            <motion.img
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.8, ease: "easeInOut" },
-              }}
-              animate={{
-                scale: 1,
-                transition: { duration: 0.8, ease: "easeInOut" },
-              }}
-              className={project.imageClass}
-              src={project.image}
-              alt={project.title}
-              loading="lazy"
-            />
+            <div className="overflow-hidden">
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.8, ease: "easeInOut" },
+                }}
+                animate={{
+                  scale: 1,
+                  transition: { duration: 0.8, ease: "easeInOut" },
+                }}
+                className={project.imageClass}
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+              />
+            </div>
             {project.descriptions.map((desc, index) => (
               <p key={index} className="p-3">
                 {desc}

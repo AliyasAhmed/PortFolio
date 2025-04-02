@@ -8,10 +8,10 @@ const Starbg = ({ starCount = 30 }) => {
     const handleMouseMove = (e) => {
       const mouseX = e.clientX - window.innerWidth / 2;
       const mouseY = e.clientY - window.innerHeight / 2;
-      
+
       setPosition({
         x: mouseX * 0.08,
-        y: mouseY * 0.10
+        y: mouseY * 0.1,
       });
     };
 
@@ -19,35 +19,37 @@ const Starbg = ({ starCount = 30 }) => {
     const handleOrientation = (e) => {
       const gamma = e.gamma; // Left/right tilt (degrees)
       const beta = e.beta; // Front/back tilt (degrees)
-      
+
       // Adjust these multipliers to control rotation sensitivity
       setPosition({
         x: gamma * 2, // Horizontal movement
-        y: beta * 1   // Vertical movement
+        y: beta * 1, // Vertical movement
       });
     };
 
     // Add event listeners
     window.addEventListener("mousemove", handleMouseMove);
-    
+
     // Add device orientation listener with iOS permission check
-    if (typeof DeviceOrientationEvent !== 'undefined' && 
-        typeof DeviceOrientationEvent.requestPermission === 'function') {
+    if (
+      typeof DeviceOrientationEvent !== "undefined" &&
+      typeof DeviceOrientationEvent.requestPermission === "function"
+    ) {
       DeviceOrientationEvent.requestPermission()
-        .then(permission => {
-          if (permission === 'granted') {
-            window.addEventListener('deviceorientation', handleOrientation);
+        .then((permission) => {
+          if (permission === "granted") {
+            window.addEventListener("deviceorientation", handleOrientation);
           }
         })
         .catch(console.error);
     } else {
-      window.addEventListener('deviceorientation', handleOrientation);
+      window.addEventListener("deviceorientation", handleOrientation);
     }
 
     // Cleanup
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener('deviceorientation', handleOrientation);
+      window.removeEventListener("deviceorientation", handleOrientation);
     };
   }, []);
 
@@ -61,11 +63,11 @@ const Starbg = ({ starCount = 30 }) => {
   }, [starCount]);
 
   return (
-    <div 
+    <div
       style={{
         transform: `translate(${position.x}px, ${position.y}px)`,
         transition: "transform 0.3s linear",
-      }} 
+      }}
       className="fixed min-h-screen w-full"
     >
       {stars.map((star, i) => (
