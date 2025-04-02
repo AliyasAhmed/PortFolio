@@ -11,19 +11,19 @@ export default function About() {
         id="about"
         className=" min-h-screen flex flex-col items-center md:text-xl"
       >
-        <InViewAnimation className="flex items-center justify-start rounded-xl shadow-md border-border lg:text-5xl xl:w-[30vw] md:w-[20vw] h-[9vh] backdrop-blur-sm border p-5 overflow-hidden">
+        <InViewAnimation className="flex items-center justify-start rounded-xl shadow-md border-border text-2xl lg:text-5xl xl:w-[30vw] md:w-[20vw] backdrop-blur-sm border p-5 overflow-hidden">
           <h1 className="typewriter">Welcome aboard!</h1>
         </InViewAnimation>
         <LightSaver />
         {/* technologies showcase */}
 
-        <InViewAnimation className="z-[1] flex bg-[#ffffff]  justify-center items-center backdrop-blur-sm rounded-2xl p-6  h-[auto] overflow-hidden text-black shadow-lg shadow-white">
+        <InViewAnimation className="z-[1] flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 overflow-hidden text-black shadow-lg shadow-white">
           <p className="transition-all animate-pulse">technologies i use</p>
         </InViewAnimation>
         <LightSaver />
 
         {/* skillSet */}
-        <InViewAnimation className=" w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden ">
+        <InViewAnimation className="w-[70vw] xl:w-[20rem] md:w-[35vw] h-[9vh] backdrop-blur-sm justify-center border border-border p-5 rounded-md bg-bg overflow-hidden ">
           <div className="fromleft flex left-0 gap-[3rem]">
             <img className="" width="35vw" src="html.svg" alt="HTML Icon" />
             <img className="" width="35vw" src="css.svg" alt="CSS Icon" />
