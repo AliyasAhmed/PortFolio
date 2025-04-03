@@ -58,9 +58,9 @@ const projects = [
     ],
     link: "https://project-x-ruddy.vercel.app/",
     buttonText: "X",
-    buttonClass: "w-[25vw] lg:w-[6vw] md:w-[10vw] flex justify-center",
+    buttonClass: "w-[25vw] lg:w-[9vw] md:w-[10vw] flex justify-center",
     buttonimg: xgif,
-    imgClass: "w-[6vw]",
+    imgClass: "w-[6vw] lg:w-[3vw]",
   },
   {
     title: "Password Manager",
