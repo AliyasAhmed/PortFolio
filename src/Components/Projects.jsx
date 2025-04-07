@@ -23,7 +23,7 @@ const projects = [
     buttonText: "Music Player",
     buttonimg: speaker,
     buttonClass: "w-[25vw] lg:w-[10vw] md:w-[15vw] flex justify-center",
-    imgClass: "w-[8vw] lg:w-[2.9vw] md:w-[4vw]",
+    imgClass: "w-[8vw] lg:w-[2.4vw] sm:w-[5vw]",
   },
   {
     title: "Todo App",
@@ -39,7 +39,7 @@ const projects = [
   {
     title: "Netflix Clone",
     image: Netflix,
-    imageClass: "w-auto h-auto  ",
+    imageClass: "w-auto h-auto",
     descriptions: [
       "Although it shouldn't be on the list, I didn't include JS when I first started learning HTML and CSS because I wasn't sure what the That language's syntax was. My first HTML/CSS project, which took two hours to complete, was this one. This was, I suppose, my first web programming project. That is the rationale behind my inclusion of this.",
       "Visit the link below to learn more about this initiative.",
@@ -58,9 +58,9 @@ const projects = [
     ],
     link: "https://project-x-ruddy.vercel.app/",
     buttonText: "X",
-    buttonClass: "w-[25vw] lg:w-[9vw] md:w-[10vw] flex justify-center",
+    buttonClass: "w-[25vw] lg:w-[9vw] md:w-[10vw] sm:w-[9vw] flex justify-center",
     buttonimg: xgif,
-    imgClass: "w-[6vw] lg:w-[3vw]",
+    imgClass: "w-[6vw] lg:w-[2vw] sm:w-[4vw]",
   },
   {
     title: "Password Manager",

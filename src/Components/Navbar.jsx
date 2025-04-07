@@ -32,7 +32,7 @@ const Navbar = () => {
               }}
               className="text-white px-4 py-2 rounded-lg hover:bg-[#ffffff] hover:text-black  hover:shadow-white shadow-lg transition-all fromdown"
             >
-              Home
+              About
             </button>
             <button
               onClick={() => {
@@ -43,7 +43,7 @@ const Navbar = () => {
               }}
               className="text-white px-4 py-2 rounded-lg hover:bg-[#ffffff] hover:text-black  hover:shadow-white shadow-lg transition-all fromdown"
             >
-              About
+              Projects
             </button>
             <button
               onClick={() => {
