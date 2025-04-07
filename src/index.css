@@ -49,8 +49,9 @@ body {
   margin: auto;
   padding-top: 80px;
 }
+/* marquee effect */
 
-@keyframes scroll {
+/* @keyframes scroll {
   from {
     transform: translateX(0);
   }
@@ -65,7 +66,8 @@ body {
 
 .fromleft:hover {
   animation-play-state: paused;
-}
+} */
+ /* marquee effect ends */
 
 .glowlight {
   overflow: hidden;
