@@ -1,3 +1,5 @@
+![Local Image](public/astronaut.svg)
+
 Hey I am Aliyas Software and sound Engineer and this is my portfolio which is opesource
 
 
