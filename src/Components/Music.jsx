@@ -13,7 +13,7 @@ const musicProjects = [
     this time I would try with smaller labels. I sent it to one big
     label as well, but they responded to my email and asked me to sign
     a contract with them. After four months, I released this, earning
-    500k on their channel and 480k on mine.`
+    500k on their channel and 480k on mine.`,
   },
   {
     videoSrc: "https://www.youtube.com/embed/OM-wp8PIrqc?si=c_0zZ007hUpFg0PA",
@@ -24,7 +24,7 @@ const musicProjects = [
     its quality and other aspects before mixing and mastering it in my
     own studio at the end of the year before sending it to the label.
     The contract took four months to settle, and they released it. I
-    created the official music video on my own channel.`
+    created the official music video on my own channel.`,
   },
   {
     videoSrc: "https://www.youtube.com/embed/fimLPvb4klY?si=5Is34ZLOSDzg4yjk",
@@ -35,28 +35,29 @@ const musicProjects = [
     its quality and other aspects before mixing and mastering it in my
     own studio at the end of the year before sending it to the label.
     The contract took Three months to settle, and they released it. I
-    re-Released the official Animated video on my own channel.`
+    re-Released the official Animated video on my own channel.`,
   },
-
 ];
 
 const Music = () => {
   return (
     <div className="min-h-screen h-[auto] w-[auto] flex flex-col items-center content-center">
-      <InViewAnimation className="z-10 relative overflow-hidden flex text-white justify-center items-center rounded-2xl p-6 h-[auto] border border-border hover:text-black">
+      <InViewAnimation
+        className="z-10 relative overflow-hidden flex text-white justify-center items-center rounded-2xl p-6 h-[auto] border border-border hover:text-black backdrop-blur-sm"
+      >
         <p id="animbtn">Music Projects</p>
       </InViewAnimation>
-      <LightSaver/>
+      <LightSaver />
 
-      <InViewAnimation className="border border-border p-4 rounded-md backdrop-blur-sm text-justify">
+      <InViewAnimation className="border z-[1] border-border p-4 rounded-md backdrop-blur-sm text-justify">
         Let's now discuss my musical contributions and projects. When I was
-        seventeen, I began producing music. I had no idea how to mix and
-        master it, but I eventually grasped the idea, and five years later, I
-        signed my first label, which allowed me to reach the audience I had
-        always desired.
+        seventeen, I began producing music. I had no idea how to mix and master
+        it, but I eventually grasped the idea, and five years later, I signed my
+        first label, which allowed me to reach the audience I had always
+        desired.
       </InViewAnimation>
-      <LightSaver/>
-      {musicProjects.map((project,index) => (
+      <LightSaver />
+      {musicProjects.map((project, index) => (
         <React.Fragment key={index}>
           <div className="flex flex-col justify-center content-center">
             <InViewAnimation className="flex flex-col z-[1] backdrop-blur-sm rounded-2xl border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md md:text-2xl text-justify">
@@ -73,7 +74,7 @@ const Music = () => {
               <p className="p-2">{project.description}</p>
             </InViewAnimation>
           </div>
-          <LightSaver/>
+          <LightSaver />
         </React.Fragment>
       ))}
     </div>

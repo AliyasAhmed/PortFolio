@@ -79,11 +79,11 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+export default function Projects() {
   return (
     <>
       <LightSaver />
-      <InViewAnimation className="relative overflow-hidden hover:text-black flex bg-[#000000] justify-center items-center rounded-2xl p-6 text-white bg-bg border border-border">
+      <InViewAnimation className="relative overflow-hidden hover:text-black flex justify-center items-center rounded-2xl p-6 text-white border border-border z-[1] backdrop-blur-sm">
         <p id="animbtn" className="cursor-pointer z-10">
           Software Projects
         </p>
@@ -93,7 +93,7 @@ const Projects = () => {
         <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="rounded-2xl backdrop-blur-sm text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] md:text-2xl lg:text-xl overflow-hidden shadow-shadow shadow-lg">
+          <InViewAnimation className="rounded-2xl backdrop-blur-sm text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] md:text-2xl lg:text-xl overflow-hidden shadow-shadow shadow-lg z-[1]">
             <p className="p-2">{project.title}</p>
             <div className="overflow-hidden">
               <motion.img
@@ -128,7 +128,7 @@ const Projects = () => {
             >
               <button
                 id="animbtn"
-                className={`text-white overflow-hidden relative rounded-lg p-4 border border-border shadow-shadow transition-all hover:text-black md:text-3xl ${project.buttonClass} `}
+                className={`text-white overflow-hidden relative rounded-lg p-4 border border-border transition-all hover:text-black md:text-3xl z-[10] backdrop-blur-sm ${project.buttonClass} `}
               >
                 {/* {project.buttonText} */}
                 {project.buttonimg ? (
@@ -148,6 +148,4 @@ const Projects = () => {
       ))}
     </>
   );
-};
-
-export default Projects;
+}
