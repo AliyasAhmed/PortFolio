@@ -21,14 +21,14 @@ export default function About() {
   return (
     <div id="about" className="min-h-screen flex flex-col items-center md:text-xl">
       {/* Welcome */}
-      <InViewAnimation className="flex items-center justify-start rounded-xl shadow-md border-border text-2xl lg:text-5xl lg:w-[30vw] sm:w-[37vw] w-[75vw] sm:text-3xl backdrop-blur-sm border p-5 overflow-hidden">
+      <InViewAnimation className="flex items-center justify-start rounded-xl bg-bg border-border text-2xl lg:text-5xl lg:w-[30vw] sm:w-[37vw] w-[75vw] sm:text-3xl border p-5 overflow-hidden">
         <h1 className="typewriter">Welcome aboard!</h1>
       </InViewAnimation>
       <LightSaver />
 
       {/* Technologies */}
-      <InViewAnimation className="z-[1] flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 overflow-hidden text-black shadow-lg shadow-white">
-          <p className="transition-all animate-pulse">technologies i use</p>
+      <InViewAnimation className="z-10 relative flex bg-bg justify-center items-center rounded-2xl p-6 overflow-hidden text-white cursor-pointer border border-border hover:text-black">
+          <p id="animbtn" className="">technologies i use</p>
         </InViewAnimation>
       <LightSaver />
 

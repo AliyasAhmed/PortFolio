@@ -67,7 +67,7 @@ body {
 .fromleft:hover {
   animation-play-state: paused;
 } */
- /* marquee effect ends */
+/* marquee effect ends */
 
 .glowlight {
   overflow: hidden;
@@ -176,4 +176,25 @@ body {
 }
 .fromdown {
   animation: slide 0.8s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
+
+#animbtn::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all 0.5s;
+  z-index: -2;
+}
+
+#animbtn:hover::after {
+  bottom: 0;
+  border-radius: 0;
+  color: #000000;
 }

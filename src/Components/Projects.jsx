@@ -58,7 +58,8 @@ const projects = [
     ],
     link: "https://project-x-ruddy.vercel.app/",
     buttonText: "X",
-    buttonClass: "w-[25vw] lg:w-[9vw] md:w-[10vw] sm:w-[9vw] flex justify-center",
+    buttonClass:
+      "w-[25vw] lg:w-[9vw] md:w-[10vw] sm:w-[9vw] flex justify-center",
     buttonimg: xgif,
     imgClass: "w-[6vw] lg:w-[2vw] sm:w-[4vw]",
   },
@@ -82,15 +83,17 @@ const Projects = () => {
   return (
     <>
       <LightSaver />
-      <InViewAnimation className="flex bg-[#ffffff] justify-center items-center rounded-2xl p-6 text-black shadow-lg shadow-white">
-        <p className="transition-all animate-pulse">Software Projects</p>
+      <InViewAnimation className="relative overflow-hidden hover:text-black flex bg-[#000000] justify-center items-center rounded-2xl p-6 text-white bg-bg border border-border">
+        <p id="animbtn" className="cursor-pointer z-10">
+          Software Projects
+        </p>
       </InViewAnimation>
 
       {projects.map((project, index) => (
         <React.Fragment key={index}>
           <LightSaver />
 
-          <InViewAnimation className="backdrop-blur-sm rounded-2xl bg-bg text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] shadow-shadow shadow-lg md:text-2xl lg:text-xl overflow-hidden border border-border">
+          <InViewAnimation className="rounded-2xl backdrop-blur-sm text-white h-auto lg:w-[65vw] md:w-[75vw] w-[85vw] md:text-2xl lg:text-xl overflow-hidden shadow-shadow shadow-lg">
             <p className="p-2">{project.title}</p>
             <div className="overflow-hidden">
               <motion.img
@@ -117,19 +120,26 @@ const Projects = () => {
 
           <LightSaver />
           <InViewAnimation>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a
+              className={`overflow-hidden relative`}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
-                className={`text-white backdrop-blur-md rounded-lg p-4 shadow-lg shadow-shadow transition-all hover:bg-white hover:text-black hover:shadow-lg hover:shadow-white md:text-3xl ${project.buttonClass} `}
+                id="animbtn"
+                className={`text-white overflow-hidden relative rounded-lg p-4 border border-border shadow-shadow transition-all hover:text-black md:text-3xl ${project.buttonClass} `}
               >
                 {/* {project.buttonText} */}
                 {project.buttonimg ? (
                   <img
+                    id="animbtn"
                     className={project.imgClass}
                     src={project.buttonimg}
                     alt=""
                   />
                 ) : (
-                  <span>{project.buttonText}</span>
+                  <span id="animbtn">{project.buttonText}</span>
                 )}
               </button>
             </a>

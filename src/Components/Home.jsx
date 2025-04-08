@@ -37,7 +37,7 @@ const Home = () => {
           </a>
         </div>
         {/* Welcome Message */}
-        <InViewAnimation className="flex items-center p-6 border border-border backdrop-blur-sm rounded-2xl text-xl lg:text-4xl md:text-4xl bg-bg ">
+        <InViewAnimation className="flex items-center p-6 border border-border rounded-2xl text-xl lg:text-4xl md:text-4xl bg-bg ">
           <h1 className="typewriter">My Name is aliyas ahmed</h1>
         </InViewAnimation>
         {/* Decorative Line */}

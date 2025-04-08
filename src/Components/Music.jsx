@@ -43,12 +43,12 @@ const musicProjects = [
 const Music = () => {
   return (
     <div className="min-h-screen h-[auto] w-[auto] flex flex-col items-center content-center">
-      <InViewAnimation className="z-[1] scrollAnim flex bg-[#ffffff] justify-center items-center backdrop-blur-sm rounded-2xl p-6 h-[auto] overflow-hidden text-black shadow-lg shadow-white">
-        Music Projects
+      <InViewAnimation className="z-10 relative overflow-hidden flex text-white justify-center items-center rounded-2xl p-6 h-[auto] border border-border hover:text-black">
+        <p id="animbtn">Music Projects</p>
       </InViewAnimation>
       <LightSaver/>
 
-      <InViewAnimation className="border border-border p-4 rounded-md backdrop-blur-sm shadow shadow-shadow text-justify">
+      <InViewAnimation className="border border-border p-4 rounded-md backdrop-blur-sm text-justify">
         Let's now discuss my musical contributions and projects. When I was
         seventeen, I began producing music. I had no idea how to mix and
         master it, but I eventually grasped the idea, and five years later, I
@@ -59,7 +59,7 @@ const Music = () => {
       {musicProjects.map((project,index) => (
         <React.Fragment key={index}>
           <div className="flex flex-col justify-center content-center">
-            <InViewAnimation className="flex flex-col z-[1] backdrop-blur-sm rounded-2xl bg-bg border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md md:text-2xl text-justify">
+            <InViewAnimation className="flex flex-col z-[1] backdrop-blur-sm rounded-2xl border border-border text-text h-[80vh] lg:w-[65vw] w-[85vw] overflow-hidden justify-center content-center shadow-shadow shadow-md md:text-2xl text-justify">
               <iframe
                 width="auto"
                 height="400"

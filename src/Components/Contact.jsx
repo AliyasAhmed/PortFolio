@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InViewAnimation from "./InViewAnimation";
 import axios from "axios";
+import LightSaver from "./Line";
 
 
 const Contact = () => {
@@ -44,7 +45,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className=" flex flex-col justify-center p-5 backdrop-blur-sm shadow shadow-shadow border border-border rounded-md w-full ">
+      <div className=" flex flex-col justify-center p-5 border border-border rounded-md w-full ">
         {/* Header Section */}
         <section className="text-center mb-10">
           <h1 className="text-4xl font-bold text-[#36ffc6] mb-4">
@@ -76,7 +77,7 @@ const Contact = () => {
                 placeholder="Enter your name"
                 value={formFill.name}
                 onChange={handleInputChange}
-                className="mt-1 block w-full p-2 border border-border bg-[#0000009d] text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
+                className="mt-1 block w-full p-2 border border-border bg-bg text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
                 required
               />
             </div>
@@ -94,7 +95,7 @@ const Contact = () => {
                 placeholder="Enter your email"
                 value={formFill.email}
                 onChange={handleInputChange}
-                className="mt-1 block w-full p-2 border border-border bg-[#0000009d] text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
+                className="mt-1 block w-full p-2 border border-border bg-bg text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#32ffc5]"
                 required
               />
             </div>
@@ -112,15 +113,15 @@ const Contact = () => {
                 rows="5"
                 value={formFill.message}
                 onChange={handleInputChange}
-                className="mt-1 block w-full p-2 border border-border bg-[#000000] text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#01C38D]"
+                className="mt-1 block w-full p-2 border border-border bg-bg text-[#FFFFFF] rounded-md focus:ring-[#01C38D] focus:border-[#01C38D]"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-[#000000] border border-border text-[#FFFFFF] shadow-lg hover:shadow-white font-bold py-2 px-4 rounded-md hover:bg-[#ffffff] hover:text-black transition duration-300"
+              className="text-white px-4 py-2 rounded-lg relative overflow-hidden hover:text-black border border-border"
             >
-              Submit
+              <p id="animbtn">Submit</p>
             </button>
           </form>
         </InViewAnimation>

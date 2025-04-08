@@ -6,14 +6,18 @@ const Navbar = () => {
 
   return (
     <>
-    
-      <div>
+      <section>
         {/* Hamburger Icon */}
         <button
-          className="fixed fromdown top-4 left-4 z-20 bg-bg backdrop-blur-sm border border-[#5353534b] p-2 rounded-md hover:bg-[#ffffff] hover:shadow-white shadow-lg transition-all hover:text-black "
+          className="fixed overflow-hidden top-4 left-4 z-20 backdrop-blur-sm border border-border p-2 rounded-md transition-all hover:text-black"
           onClick={toggleMenu}
+          onBlur={()=>{
+            setTimeout(() => {
+              setIsOpen(false)
+            },100);
+          }}
         >
-          {isOpen ? <span>X</span> : <span>☰</span>}
+          {isOpen ? <span id="animbtn">X</span> : <span id="animbtn">☰</span>}
         </button>
 
         {/* Sidebar */}
@@ -30,9 +34,9 @@ const Navbar = () => {
                   .scrollIntoView({ behavior: "smooth" });
                 setIsOpen(false);
               }}
-              className="text-white px-4 py-2 rounded-lg hover:bg-[#ffffff] hover:text-black  hover:shadow-white shadow-lg transition-all fromdown"
+              className="text-white px-4 py-2 rounded-lg hover:text-black fromdown overflow-hidden relative"
             >
-              About
+              <p id="animbtn">About</p>
             </button>
             <button
               onClick={() => {
@@ -41,9 +45,9 @@ const Navbar = () => {
                   .scrollIntoView({ behavior: "smooth" });
                 setIsOpen(false);
               }}
-              className="text-white px-4 py-2 rounded-lg hover:bg-[#ffffff] hover:text-black  hover:shadow-white shadow-lg transition-all fromdown"
+              className="text-white overflow-hidden relative px-4 py-2 rounded-lg hover:text-black fromdown"
             >
-              Projects
+              <p id="animbtn">Projects</p>
             </button>
             <button
               onClick={() => {
@@ -52,13 +56,13 @@ const Navbar = () => {
                   .scrollIntoView({ behavior: "smooth" });
                 setIsOpen(false);
               }}
-              className="text-white px-4 py-2 rounded-lg hover:bg-[#ffffff] hover:text-black  hover:shadow-white shadow-lg transition-all fromdown"
+              className="text-white px-4 py-2 rounded-lg relative overflow-hidden hover:text-black fromdown"
             >
-              Contact
+              <p id="animbtn">Contact</p>
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
